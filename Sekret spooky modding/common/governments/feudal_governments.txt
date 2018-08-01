@@ -1,0 +1,349 @@
+feudal_governments = {
+
+	ceresian_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE
+			TEMPLE
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			denrian_feudal_government
+			theocratic_feudal_government
+		}
+		free_revoke_on_tiers = {
+			duke
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+		}
+		frame_suffix = "_chineseimperial"
+		title_prefix = "summer_"
+		potential = {
+			NAND = {
+				controls_religion = yes
+				NOT = { religion_group = ceresian }
+				NOT = { religion_group = denrian }
+			}
+			religion_group = ceresian
+			is_patrician = no
+		}
+		
+		color = { 118 255 163 }
+		
+		uses_decadence = yes
+		
+		dukes_called_kings = yes
+		barons_need_dynasty = yes
+		free_retract_vassalage = yes
+
+		can_build_tribal = no
+		
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+		capital_move_delay = 600
+
+		character_modifier = {
+			vassal_opinion = 20
+			same_religion_opinion = 15
+			levy_size = -0.25
+		}
+	}
+
+	theocratic_feudal_government = {
+		preferred_holdings = { CASTLE TEMPLE }
+		allowed_holdings = { 
+			CASTLE 
+			TEMPLE
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			imperial_denrian_government
+			denrian_feudal_government
+			theocracy_government
+			feudal_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+		}
+		frame_suffix = "_theocraticfeudal"
+
+		potential = {
+			OR = {
+				has_landed_title = d_knights_dawn
+				has_law = ze_administration_laws_1
+			}
+			OR = {
+				culture_group = west_denrian
+				culture_group = east_denrian
+				culture_group = high_denrian
+			}
+			NOT = { religion_group = ceresian }
+			higher_tier_than = baron
+			religion_group = denrian
+			is_patrician = no
+		}
+		
+		color = { 207 145 90 }
+
+		uses_decadence = yes
+		uses_piety_for_law_change = yes
+		dukes_called_kings = yes
+		barons_need_dynasty = yes
+
+		free_levies_in_offensive_war = yes 
+
+		can_build_tribal = no
+		
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+
+		character_modifier = {
+			monthly_character_piety = 1
+		}
+
+		capital_move_delay = 600
+	}
+	
+	denrian_feudal_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			muslim_government
+			theocratic_feudal_government
+			chinese_imperial_government
+			imperial_denrian_government
+		}
+		vassal_call_to_arms = {
+			feudal_government
+			denrian_feudal_government
+			theocratic_feudal_government
+			merchant_republic_government
+			republic_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+		}
+		forced_contract = { 
+			imperial_denrian_government
+		}
+		potential = {
+			OR = {
+				culture_group = west_denrian
+				culture_group = east_denrian
+				culture_group = high_denrian
+			}
+			OR = {
+				has_law = ze_administration_laws_0
+				tier = BARON 
+			}
+			NOT = { religion_group = ceresian }
+			NOT = { is_government_potential = imperial_denrian_government }
+			NOT = { is_government_potential = imperial_warlord_government }
+			is_patrician = no
+		}
+		
+		color = { 121 133 207 }
+		
+		dukes_called_kings = yes
+		barons_need_dynasty = yes
+
+		can_build_tribal = no
+		
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+		capital_move_delay = 600
+
+		can_demand_religious_conversion = no
+		gets_religion_opinion_penalties = no
+		gives_religion_opinion_penalties = no
+		vassal_government_opinion_penalties = no
+
+		character_modifier = {
+			levy_size = -0.2
+		}
+	}
+
+	imperial_warlord_government = {
+		preferred_holdings = { CASTLE CITY }
+		allowed_holdings = { 
+			CASTLE
+			CITY
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			feudal_government
+			muslim_government
+			theocratic_feudal_government
+			merchant_republic_government
+			republic_government
+			imperial_denrian_government
+		}
+		free_revoke_on_tiers = {
+			duke
+			count
+			king
+			baron
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+		}
+		frame_suffix = "_warlord"
+		title_prefix = "warlord_"
+		potential = {
+			culture_group = high_denrian
+			religion_group = denrian 
+			NOT = { religion_group = ceresian }
+			NOT = { tier = EMPEROR }
+			NOT = { tier = COUNT }
+			higher_tier_than = baron
+			independent = yes
+			is_patrician = no
+		}
+
+		color = { 152 100 60 }
+
+		uses_decadence = yes
+
+		barons_need_dynasty = yes
+
+		can_build_tribal = no
+		
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+		capital_move_delay = 200
+
+		can_create_empires = no		
+		vassal_government_opinion_penalties = no
+		can_grant_kingdoms_and_empires_to_other_government_group = no
+		free_retract_vassalage = yes
+		
+		character_modifier = {
+			city_vassal_min_levy = -0.2
+			castle_vassal_min_levy = -0.2
+			temple_vassal_min_levy = -0.2
+			city_vassal_max_levy = -0.25
+			castle_vassal_max_levy = -0.25
+			temple_vassal_max_levy = -0.25
+			retinuesize_perc = 0.75
+			demesne_size = 2
+			general_opinion = -20
+			vassal_opinion = 15
+		}
+
+		unit_modifier = {
+			retinuesize_perc = 0.75
+		}
+	}
+	
+	imperial_denrian_government = {
+		preferred_holdings = { CITY }
+		allowed_holdings = { 
+			CITY
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			denrian_feudal_government
+			theocratic_feudal_government
+			merchant_republic_government
+			republic_government
+		}
+		free_revoke_on_tiers = {
+			duke
+			count
+			king
+			baron
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+		}
+		forced_contract = { 
+			feudal_government
+			denrian_feudal_government
+			theocratic_feudal_government
+			merchant_republic_government
+			republic_government
+			imperial_denrian_government
+		}
+		frame_suffix = "_imperial"
+		title_prefix = "imperial_"
+		potential = {
+			culture_group = high_denrian
+			religion_group = denrian 
+			higher_tier_than = baron
+			OR = {
+				has_law = ze_administration_laws_2 
+				culture = imperial
+				top_liege = {
+					culture = ROOT
+				}
+			}
+			NOT = { is_government_potential = imperial_warlord_government }
+			NOT = { religion_group = ceresian }
+			is_patrician = no
+		}
+
+		color = { 152 40 60 }
+
+		uses_decadence = yes
+
+		barons_need_dynasty = yes
+
+		can_build_tribal = no
+		
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+		capital_move_delay = 200
+
+		vassal_government_opinion_penalties = no
+		can_grant_kingdoms_and_empires_to_other_government_group = yes
+		free_retract_vassalage = yes
+
+		vassal_limit = 20
+		
+		character_modifier = {
+			levy_size = -0.5
+			city_vassal_min_levy = -0.25
+			castle_vassal_min_levy = -0.25
+			temple_vassal_min_levy = -0.25
+			city_vassal_max_levy = -0.35
+			castle_vassal_max_levy = -0.35
+			temple_vassal_max_levy = -0.35
+			retinuesize_perc = 1.5
+			retinue_maintenence_cost = -0.5
+		}
+
+		unit_modifier = {
+			retinuesize_perc = 1.5
+			retinue_maintenence_cost = -0.5
+		}
+	}
+}

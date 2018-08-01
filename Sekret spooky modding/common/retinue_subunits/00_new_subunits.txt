@@ -1,0 +1,275 @@
+# Types:
+# 0 - Light Infantry
+# 1 - Heavy Infantry
+# 2 - Pikemen
+# 3 - Light Cavalry
+# 4 - Heavy Cavalry
+# 5 - Archers
+# 6 - Special troops
+
+RETTYPE_CUL_HIGH_DENRIAN = 
+{
+	first_type = 1
+	first_amount = 240
+	second_type = 2
+	second_amount = 60
+	
+	potential = {
+		is_nomadic = no
+		culture_group = high_denrian
+		NOT = { culture = septimian }
+		NOT = { culture = orates }
+	}
+	
+	modifier = {
+		heavy_infantry_defensive = 0.4
+		heavy_infantry_morale = 0.1
+		pikemen_defensive = 0.3
+		pikemen_morale = 0.2
+	}
+}
+
+RETTYPE_CUL_LEGIO = 
+{
+	first_type = 1
+	first_amount = 60
+	second_type = 5
+	second_amount = 240
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = imperial
+			culture = septimian
+			culture = soltarian
+		}
+	}
+	
+	modifier = {
+		heavy_infantry_defensive = 0.4
+		heavy_infantry_morale = 0.1
+		archers_offensive = 0.5
+	}
+}
+
+RETTYPE_CUL_IMPERIAL = 
+{
+	first_type = 4
+	first_amount = 225
+	second_type = 2
+	second_amount = 75
+	
+	potential = {
+		is_nomadic = no
+		culture = imperial
+	}
+	
+	modifier = {
+		knights_offensive = 0.4
+		knights_defensive = 0.2
+		pikemen_defensive = 0.3
+		pikemen_morale = 0.2
+	}
+}
+
+RETTYPE_CUL_KNIGHTS_DAWN = 
+{
+	first_type = 1
+	first_amount = 175
+	second_type = 4
+	second_amount = 50
+	
+	potential = {
+		is_nomadic = no
+		religion = dawn
+		OR = {
+			culture = cinigalian
+			culture = septimian
+			NOT = { culture_group = high_denrian }
+		}
+	}
+	
+	modifier = {
+		heavy_infantry_defensive = 0.5
+		knights_offensive = 0.2
+		knights_defensive = 0.5
+	}
+}
+
+RETTYPE_CUL_SNAKE_DEVOURED = 
+{
+	first_type = 0
+	first_amount = 320
+	second_type = 3
+	second_amount = 180
+	
+	potential = {
+		is_nomadic = no
+		culture_group = amalian
+		religion = snake_cult
+	}
+	
+	modifier = {
+		light_infantry_defensive = 1
+		light_infantry_morale = 1
+		light_cavalry_defensive = 1.5
+		light_cavalry_morale = 1.5
+	}
+}
+
+RETTYPE_CUL_KNIGHTS_BLOOD = 
+{
+	first_type = 4
+	first_amount = 175
+	second_type = 3
+	second_amount = 75
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			AND = {
+				OR = {
+					culture = imperial
+					culture = septimian
+					culture = cinigalian
+				}
+				is_title_active = d_ascendant_blood
+				religion = dawn
+			}
+			religion = blood_cult
+		}
+	}
+	
+	modifier = {
+		light_cavalry_defensive = 0.2
+		knights_offensive = 0.4
+		knights_defensive = 0.1
+	}
+}
+
+RETTYPE_CUL_KNIGHTS_BLOOD = 
+{
+	first_type = 4
+	first_amount = 175
+	second_type = 3
+	second_amount = 75
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			AND = {
+				culture = septimian
+				is_title_active = d_ascendant_blood
+				religion = dawn
+			}
+			religion = blood_cult
+		}
+	}
+	
+	modifier = {
+		light_cavalry_defensive = 0.2
+		knights_offensive = 0.4
+		knights_defensive = 0.1
+	}
+}
+
+RETTYPE_CUL_SOLTARIAN = 
+{
+	first_type = 4
+	first_amount = 175
+	second_type = 6
+	second_amount = 75
+
+	special_troops = horse_archers
+	
+	potential = {
+		is_nomadic = no
+		culture = soltarian
+	}
+	
+	modifier = {
+		knights_offensive = 0.1
+		knights_defensive = 0.3
+		horse_archers_offensive = 0.2
+	}
+}
+
+RETTYPE_CUL_ORATES = 
+{
+	first_type = 5
+	first_amount = 225
+	second_type = 0
+	second_amount = 25
+	
+	potential = {
+		is_nomadic = no
+		culture = orates
+	}
+	
+	modifier = {
+		archers_offensive = 0.2
+		archers_defensive = 0.2
+	}
+}
+
+RETTYPE_CUL_AUX_LEGIO = 
+{
+	first_type = 0
+	first_amount = 125
+	second_type = 1
+	second_amount = 125
+	
+	potential = {
+		is_nomadic = no
+		culture = orates
+	}
+	
+	modifier = {
+		heavy_infantry_defensive = 0.2
+		light_infantry_morale = 0.3
+		light_infantry_defensive = 0.4
+	}
+}
+
+RETTYPE_CUL_ELISIAN = 
+{
+	first_type = 5
+	first_amount = 180
+	second_type = 3
+	second_amount = 120
+	
+	potential = {
+		is_nomadic = no
+		culture = elisian
+	}
+	
+	modifier = {
+		archers_offensive = 0.2
+		light_cavalry_offensive = 0.2
+	}
+}
+
+RETTYPE_CUL_DENRIAN_ELEPHANTS = 
+{
+	first_type = 2
+	first_amount = 230
+	second_type = 6
+	second_amount = 20
+	
+	special_troops = war_elephants
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = elisian
+			culture = caeri
+			culture_group = east_denrian
+		}
+	}
+	
+	modifier = {
+		pikemen_offensive = 0.1
+		pikemen_defensive = 0.2
+	}
+}
+

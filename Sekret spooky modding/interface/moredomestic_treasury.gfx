@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_legacy_of_the_tiberius"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\legacy_of_the_tiberius.dds"
+	}
+	spriteType = {
+		name = "GFX_legacy_of_the_tiberius_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\legacy_of_the_tiberius_small.dds"
+	}	
+	spriteType = {
+		name = "GFX_eternal_dawn"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\eternal_dawn.dds"
+	}
+	spriteType = {
+		name = "GFX_eternal_dawn_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\eternal_dawn_small.dds"
+	}	
+}

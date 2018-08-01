@@ -1,0 +1,53 @@
+#########################
+# Standard Flavor Names #
+#########################
+
+government_flavor = {
+	name = gov_bureaucracy_emperor
+	graphics = GFX_evt_throne_room_byzantine
+	priority = 1
+	trigger = {
+		government = imperial_denrian_government
+		tier = EMPEROR
+	}
+}
+
+government_flavor = {
+	name = gov_bureaucracy_other
+	graphics = GFX_evt_emissary_byzantine
+	priority = 1
+	trigger = {
+		government = imperial_denrian_government
+		NOT = { tier = EMPEROR }
+	}
+}
+
+government_flavor = {
+	name = gov_warlord
+	graphics = GFX_evt_victory_arch_byzantine
+	priority = 1
+	trigger = {
+		government = imperial_warlord_government
+	}
+}
+
+government_flavor = {
+	name = gov_knights_dawn
+	graphics = GFX_evt_cathedral
+	priority = 2
+	trigger = {
+		government = theocratic_feudal_government
+		has_landed_title = k_knights_dawn
+	}
+}
+
+government_flavor = {
+	name = gov_denrian_knights
+	graphics = GFX_evt_joust
+	priority = 2
+	trigger = {
+		always = no
+		government = denrian_feudal_government
+		NOT = { has_landed_title = k_knights_dawn }
+	}
+}

@@ -1,0 +1,45 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_trait_blood_mage"
+		texturefile = "gfx/traits/blood_mage.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_imperator_denriae"
+		texturefile = "gfx/traits/imperator_denriae.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_denrian_warlord"
+		texturefile = "gfx/traits/denrian_warlord.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+		spriteType = {
+		name = "GFX_trait_althea_cultist"
+		texturefile = "gfx/traits/althea_cultist.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_eucathysus_cultist"
+		texturefile = "gfx/traits/eucathysus_cultist.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_ercaleus_cultist"
+		texturefile = "gfx/traits/ercaleus_cultist.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

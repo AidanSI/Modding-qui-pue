@@ -1,0 +1,35 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+imperial_denrian_government;Imperial Bureaucratic;;;;;;;;;;;;;x
+imperial_denrian_government_desc;An absolute form of government resolving around an Emperor who wields infinite power in Their realm. Power is delegated to an aristocratic or bureaucratic elite, which can nonetheless be revocated at will. To project Their might, the Emperor has access to a powerful standing army which mostly replaces feudal levies.;;;;;;;;;;;;;x
+
+imperial_warlord_government;Imperial Warlord;;;;;;;;;;;;;x
+imperial_warlord_government_desc;An autocratic and militaristic monarchy built around a Warlord who aspires to become Emperor of Denria. Warlords are extremely hostile between one another and wield almost as much power as the centralized imperial government. Should a Warlord become Emperor, their realm will transition to a bureaucratic or feudal form of government.;;;;;;;;;;;;;x
+
+denrian_feudal_government;Denrian Feudal;;;;;;;;;;;;;x
+denrian_feudal_government_desc;Denrian Feudalism is a government in which the realm is organised around the Denrian Feudal system. Power is delegated to nobles who are given land in exchange for money and troops. Disloyal nobles can refuse to pay any taxes and send out any troops in times of war. Denrian Feudal lords can reform to a more theocratic government, or to a bureaucratic one.;;;;;;;;;;;;;x
+
+theocratic_feudal_government;Monastic Feudal;;;;;;;;;;;;;x
+theocratic_feudal_government_desc;Monastic Feudalism, much like standard Denrian feudalism, resolves around an oath between liege and vassal. However, Monastic Feudalism allows for a slightly more centralized government than its secular counterpart. Furthermore, there are only two forms of succession available: Seniority and Elective Monarchy.;;;;;;;;;;;;;x 
+
+ceresian_government;Summer Court;;;;;;;;;;;;;x
+ceresian_government_desc;The Ceresian Elves of Denria have formed an enlightened society which remains similar to the Denrian Feudal system. This form of autocracy is caracterized by an extreme stability and the willingness to accept humans who choose to embrace the faith and traditions of Ceresia.;;;;;;;;;;;;;x
+
+ze_administration_laws_2_option;Imperial;;;;;;;;;;;;;x 
+ze_administration_laws_2;Bureaucratic Administration;;;;;;;;;;;;;x 
+ze_administration_laws_2_desc;This system of administration is ran by a myriad of magistrates and functionaries who answer directly to the Emperor. It allows for a flexible power structure which can be changed at will by the Emperor, greatly reducing the power of any landed vassal.;;;;;;;;;;;;;x 
+
+ze_administration_laws_0_option;Feudal;;;;;;;;;;;;;x 
+ze_administration_laws_0;Feudal Administration;;;;;;;;;;;;;x 
+ze_administration_laws_0_desc;A feudal society is a hierarchy of landed lords, where each person in the system owes fealty to those directly above and commands those directly below. It is the way most of the medieval world works, and it means that the ruler greatly depends on the loyalty of his more powerful vassals.;;;;;;;;;;;;;x 
+
+ze_administration_laws_1_option;Religious;;;;;;;;;;;;;x 
+ze_administration_laws_1;Theocratic Administration;;;;;;;;;;;;;x 
+ze_administration_laws_1_desc;A feudal system which directly involves men of faith in the administration of the realm. This form of government is slightly more centralized than regular feudalism and the way a monarch rules is directly influenced by the Clergy and by the Gods.;;;;;;;;;;;;;x 
+
+gov_bureaucracy_emperor;Denrian Empire;;;;;;;;;;;;;x 
+gov_bureaucracy_province;Denrian Imperial Province;;;;;;;;;;;;;x 
+gov_warlord;Denrian Warlord State;;;;;;;;;;;;;x 
+gov_knights_dawn;Order of the Dawn;;;;;;;;;;;;;x 
+gov_denrian_knights;Feudal Knighthood Order;;;;;;;;;;;;;x 
+
+

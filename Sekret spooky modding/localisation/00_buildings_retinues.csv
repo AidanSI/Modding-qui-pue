@@ -1,0 +1,37 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ca_culture_high_denrian_upper_1;Upper City;;;;;;;;;;;;;x
+ca_culture_high_denrian_upper_2;Upper City;;;;;;;;;;;;;x
+ca_culture_high_denrian_upper_3;Upper City;;;;;;;;;;;;;x
+ca_culture_high_denrian_upper_4;Upper City;;;;;;;;;;;;;x
+ca_culture_high_denrian_upper_1_desc;Denrian castles are more akin to luxurious palaces than fortified citadels. In that regard, palaces are traditionally the center of each city. Over time, each palace surrounded itself with an Upper City reserved for the wealthiest.;;;;;;;;;;;;;x
+
+ca_culture_high_denrian_legionary_1;Legionary Outpost;;;;;;;;;;;;;x
+ca_culture_high_denrian_legionary_2;Legionary Outpost;;;;;;;;;;;;;x
+ca_culture_high_denrian_legionary_3;Legionary Garrison;;;;;;;;;;;;;x
+ca_culture_high_denrian_legionary_4;Legionary Garrison;;;;;;;;;;;;;x
+ca_culture_high_denrian_legionary_1_desc;The rise of the Denrian Empire was made possible thanks to a standing army of professional soldiers: the Legionaries. In times of war, border cities are reinforced by a garrison of these elite warriors.;;;;;;;;;;;;;x
+
+ca_culture_civium_district_1;Civium District;;;;;;;;;;;;;x
+ca_culture_civium_district_2;Civium District;;;;;;;;;;;;;x
+ca_culture_civium_district_3;Civium District;;;;;;;;;;;;;x
+ca_culture_civium_district_4;Civium District;;;;;;;;;;;;;x
+ca_culture_civium_district_1_desc;Most citizens of the Empire live in these Civium Districts. Over time, the Civium Districts have replaced the Upper Cities as the economic center of each and every town.;;;;;;;;;;;;;x
+
+ca_culture_legionary_barracks_1;Legionary Barracks;;;;;;;;;;;;;x
+ca_culture_legionary_barracks_2;Legionary Barracks;;;;;;;;;;;;;x
+ca_culture_legionary_barracks_3;Legionary Barracks;;;;;;;;;;;;;x
+ca_culture_legionary_barracks_4;Legionary Barracks;;;;;;;;;;;;;x
+ca_culture_legionary_barracks_1_desc;To preserve its stability and military power, the various Denrian emperors relied on a standing army recruited amongst the citizens of the Empire. In times of siege, Legionaries can help defend the city as well.;;;;;;;;;;;;;x
+
+RETTYPE_CUL_HIGH_DENRIAN;Swordsmen Legionaries;;;;;;;;;;;;;x
+RETTYPE_CUL_LEGIO;Crossbowmen Legionaries;;;;;;;;;;;;;x
+RETTYPE_CUL_IMPERIAL;Imperial Cataphracts;;;;;;;;;;;;;x
+RETTYPE_CUL_KNIGHTS_DAWN;Knights of the Dawn;;;;;;;;;;;;;x
+RETTYPE_CUL_SOLTARIAN;Soltarian Cataphracts;;;;;;;;;;;;;x
+RETTYPE_CUL_ORATES;Oratian Longbowmen;;;;;;;;;;;;;x
+RETTYPE_CUL_AUX_LEGIO;Auxiliary Legionaries;;;;;;;;;;;;;x
+RETTYPE_CUL_ELISIAN;Elf Hunters;;;;;;;;;;;;;x
+RETTYPE_CUL_DENRIAN_ELEPHANTS;War Elephants;;;;;;;;;;;;;x
+RETTYPE_CUL_KNIGHTS_BLOOD;Knights of the Blood Oath;;;;;;;;;;;;;x
+RETTYPE_CUL_SNAKE_DEVOURED;Devoured Ones;;;;;;;;;;;;;x
+

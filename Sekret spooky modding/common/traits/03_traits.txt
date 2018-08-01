@@ -1,0 +1,379 @@
+secretly_dawn = {
+	potential = {
+		NOT = {
+			religion = dawn
+		}
+	}
+	
+	opposites = {
+		secretly_blood_cult
+		secretly_snake_cult
+		secretly_sun_church
+		secretly_moon_church
+		secretly_ancient_gods
+		secretly_veluath
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = secret_religious_society_dawn
+			AND = {
+				is_close_relative = FROM
+				trait = secretly_dawn
+			}
+		}
+	}
+
+	same_opinion = 15
+	
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
+
+secretly_blood_cult = {
+	potential = {
+		NOT = {
+			religion = blood_cult
+		}
+	}
+	
+	opposites = {
+		secretly_dawn
+		secretly_snake_cult
+		secretly_sun_church
+		secretly_moon_church
+		secretly_ancient_gods
+		secretly_veluath
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = secret_religious_society_blood_cult
+			AND = {
+				is_close_relative = FROM
+				trait = secretly_blood_cult
+			}
+		}
+	}
+
+	same_opinion = 15
+	
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
+
+secretly_snake_cult = {
+	potential = {
+		NOT = {
+			religion = snake_cult
+		}
+	}
+	
+	opposites = {
+		secretly_blood_cult
+		secretly_dawn
+		secretly_sun_church
+		secretly_moon_church
+		secretly_ancient_gods
+		secretly_veluath
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = secret_religious_society_snake_cult
+			AND = {
+				is_close_relative = FROM
+				trait = secretly_snake_cult
+			}
+		}
+	}
+
+	same_opinion = 15
+	
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
+
+secretly_sun_church = {
+	potential = {
+		NOT = {
+			religion = sun_church
+		}
+	}
+	
+	opposites = {
+		secretly_blood_cult
+		secretly_snake_cult
+		secretly_dawn
+		secretly_moon_church
+		secretly_ancient_gods
+		secretly_veluath
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = secret_religious_society_sun_church
+			AND = {
+				is_close_relative = FROM
+				trait = secretly_sun_church
+			}
+		}
+	}
+
+	same_opinion = 15
+	
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
+
+secretly_moon_church = {
+	potential = {
+		NOT = {
+			religion = moon_church
+		}
+	}
+	
+	opposites = {
+		secretly_blood_cult
+		secretly_snake_cult
+		secretly_dawn
+		secretly_sun_church
+		secretly_ancient_gods
+		secretly_veluath
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = secret_religious_society_moon_church
+			AND = {
+				is_close_relative = FROM
+				trait = secretly_moon_church
+			}
+		}
+	}
+
+	same_opinion = 15
+	
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
+
+secretly_ancient_gods = {
+	potential = {
+		NOT = {
+			religion = ancient_gods 
+		}
+	}
+	
+	opposites = {
+		secretly_blood_cult
+		secretly_snake_cult
+		secretly_sun_church
+		secretly_moon_church
+		secretly_dawn
+		secretly_veluath
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = secret_religious_society_ancient_gods 
+			AND = {
+				is_close_relative = FROM
+				trait = secretly_ancient_gods 
+			}
+		}
+	}
+
+	same_opinion = 15
+	
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
+
+secretly_veluath = {
+	potential = {
+		NOT = {
+			religion = veluath
+		}
+	}
+	
+	opposites = {
+		secretly_blood_cult
+		secretly_snake_cult
+		secretly_sun_church
+		secretly_moon_church
+		secretly_dawn
+		secretly_ancient_gods
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = secret_religious_society_veluath
+			AND = {
+				is_close_relative = FROM
+				trait = secretly_veluath
+			}
+		}
+	}
+
+	same_opinion = 15
+	
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
+
+blood_mage = {
+	ruler_designer_cost = 20
+
+	potential = {
+		religion_group = denrian
+	}
+
+	birth = 25
+	inherit_chance = 15
+	both_parent_has_trait_inherit_chance = 30
+
+	general_opinion = -10
+	church_opinion = 35
+	health = 3
+	combat_rating = 4
+	
+	ai_rationality = -15
+	ai_zeal = 15
+
+	same_opinion = 30
+
+	male_insult = INSULT_ABOMINATION
+	female_insult = INSULT_ABOMINATION
+	child_insult = INSULT_ABOMINATION
+	male_insult_adj = INSULT_MONSTROUS
+	female_insult_adj = INSULT_MONSTROUS
+	child_insult_adj = INSULT_MONSTROUS
+}
+
+imperator_denriae = {
+	customizer = no
+
+	vassal_opinion = 15
+	monthly_character_piety = 1
+
+	demesne_size = 5
+	martial = 3
+	diplomacy = 2
+
+	same_opinion = -100
+	opposite_opinion = -200
+
+	opposites = {
+		denrian_warlord
+	}
+}
+
+denrian_warlord = {
+	customizer = no
+
+	monthly_character_prestige = 1
+	monthly_character_piety = -2
+
+	martial = 5
+	diplomacy = -2
+	combat_rating = 1
+
+	same_opinion = -75
+	opposite_opinion = -200
+
+	opposites = {
+		imperator_denriae
+	}
+}
+
+althea_cultist = {
+	potential = {
+		OR = {
+			religion = dawn
+			religion = blood_cult
+		}
+	}
+
+	diplomacy = 2
+	fertility = 0.15
+	intrigue = -1
+
+	ai_zeal = 20
+
+	same_opinion = 15
+	opposite_opinion = -5
+
+	ruler_designer_cost = 0
+
+	opposites = {
+		ercaleus_cultist
+		eucathysus_cultist
+	}
+}
+
+ercaleus_cultist = {
+	potential = {
+		OR = {
+			religion = dawn
+			religion = blood_cult
+		}
+	}
+
+	martial = 2
+	combat_rating = 1
+	stewardship = -1
+
+	ai_zeal = 20
+
+	same_opinion = 15
+	opposite_opinion = -5
+
+	ruler_designer_cost = 0
+
+	opposites = {
+		althea_cultist
+		eucathysus_cultist
+	}
+}
+
+eucathysus_cultist = {
+	potential = {
+		OR = {
+			religion = dawn
+			religion = blood_cult
+		}
+	}
+
+	intrigue = 2
+	learning = 1
+	martial = -1
+
+	ai_zeal = 20
+
+	same_opinion = 15
+	opposite_opinion = -5
+
+	ruler_designer_cost = 0
+
+	opposites = {
+		ercaleus_cultist
+		althea_cultist
+	}
+}
+
+

@@ -1,0 +1,197 @@
+decisions = {
+
+	worship_althea = {
+		only_playable = yes
+		
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			OR = {
+				religion = dawn
+				religion = blood_cult
+			}
+			NOT = { trait = althea_cultist }
+			NOT = { trait = ercaleus_cultist }
+			NOT = { trait = eucathysus_cultist }
+			is_adult = yes
+		}
+		
+		allow = {
+			piety = 150
+		}
+		
+		effect = {
+			add_trait = althea_cultist
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	worship_ercaleus = {
+		only_playable = yes
+		
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			OR = {
+				religion = dawn
+				religion = blood_cult
+			}
+			NOT = { trait = althea_cultist }
+			NOT = { trait = ercaleus_cultist }
+			NOT = { trait = eucathysus_cultist }
+			is_adult = yes
+		}
+		
+		allow = {
+			piety = 150
+		}
+		
+		effect = {
+			add_trait = ercaleus_cultist
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	worship_eucathysus = {
+		only_playable = yes
+		
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			OR = {
+				religion = dawn
+				religion = blood_cult
+			}
+			NOT = { trait = althea_cultist }
+			NOT = { trait = ercaleus_cultist }
+			NOT = { trait = eucathysus_cultist }
+			is_adult = yes
+		}
+		
+		allow = {
+			piety = 150
+		}
+		
+		effect = {
+			add_trait = eucathysus_cultist
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	renounce_deity = {
+		only_playable = yes
+		
+		is_high_prio = no
+	
+		potential = {
+			is_playable = yes
+			OR = {
+				trait = althea_cultist 
+				trait = ercaleus_cultist 
+				trait = eucathysus_cultist 
+			}
+		}
+		
+		allow = {
+			piety = 1000
+			OR = {
+				trait = althea_cultist 
+				trait = ercaleus_cultist 
+				trait = eucathysus_cultist 
+			}
+		}
+		
+		effect = {
+			remove_trait = althea_cultist
+			remove_trait = ercaleus_cultist
+			remove_trait = eucathysus_cultist
+			piety = -750
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	create_pontifex_dawn = {
+		only_playable = yes
+		
+		is_high_prio = yes
+	
+		potential = {
+			is_playable = yes
+			religion = dawn
+			NOT = { is_title_active = d_pontifex_dawn }
+			has_dlc = "Sons of Abraham"
+			tier = EMPEROR
+		}
+		
+		allow = {
+			piety = 2000
+			religion_authority = 0.9
+			OR = {
+				owns = 496 # Must be changed later WHEN WE GET A FUCKING MAP
+				any_realm_lord = {
+					owns = 496
+				}
+			}
+		}
+		
+		effect = {
+			activate_title = { title = d_pontifex_dawn status = yes }
+			hidden_tooltip = {
+				create_random_priest = {
+					dynasty = none
+					random_traits = yes
+				}
+				new_character = {
+					d_pontifex_dawn = {
+						grant_title = PREV
+					}
+					wealth = 500
+					opinion = {
+						who = ROOT
+						modifier = opinion_creator_of_rel_heal
+					}
+				}
+			}
+			piety = 1000
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}

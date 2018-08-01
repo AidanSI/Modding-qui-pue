@@ -1,0 +1,24 @@
+spriteTypes = {
+	
+	# Decision icons
+	spriteType = {
+		name = "GFX_worship_althea"
+		texturefile = "gfx\\interface\decision_icon_convert_to_local_religion.dds" #Placeholder
+	}
+	spriteType = {
+		name = "GFX_worship_eucathysus"
+		texturefile = "gfx\\interface\decision_icon_convert_to_local_religion.dds" #Placeholder
+	}
+	spriteType = {
+		name = "GFX_worship_ercaleus"
+		texturefile = "gfx\\interface\decision_icon_convert_to_local_religion.dds" #Placeholder
+	}
+	spriteType = {
+		name = "GFX_renounce_deity"
+		texturefile = "gfx\\interface\decision_icon_convert_to_local_religion.dds" #Placeholder
+	}
+	spriteType = {
+		name = "GFX_create_pontifex_dawn"
+		texturefile = "gfx\\interface\decision_icon_convert_to_local_religion.dds" #Placeholder
+	}
+}

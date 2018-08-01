@@ -1,0 +1,66 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+baron_imperial;Quaestor;;;;;;;;;;;;;x
+baron_female_imperial;Quaestora;;;;;;;;;;;;;x
+baron_title_ruler_consort_imperial;Quaestor;;;;;;;;;;;;;x
+baron_title_ruler_consort_female_imperial;Quaestora;;;;;;;;;;;;;x
+temple_baron_dawn;Sacerdos;;;;;;;;;;;;;x
+temple_baron_female_dawn;Sacerdos;;;;;;;;;;;;;x
+imperial_count;Comes;;;;;;;;;;;;;x
+imperial_count_female;Comitissa;;;;;;;;;;;;;x
+imperial_count_title_ruler_consort;Comes;;;;;;;;;;;;;x
+imperial_count_title_ruler_consort_female;Comitissa;;;;;;;;;;;;;x
+imperial_duke;Praefectus;;;;;;;;;;;;;x
+imperial_duke_female;Praefecta;;;;;;;;;;;;;x
+imperial_duke_title_ruler_consort;Praefectus;;;;;;;;;;;;;x
+imperial_duke_title_ruler_consort_female;Praefecta;;;;;;;;;;;;;x
+imperial_king;Vicarius;;;;;;;;;;;;;x
+imperial_king_female;Vicaria;;;;;;;;;;;;;x
+imperial_king_title_ruler_consort;Vicarius;;;;;;;;;;;;;x
+imperial_king_title_ruler_consort_female;Vicaria;;;;;;;;;;;;;x
+imperial_emperor;Imperator;;;;;;;;;;;;;x
+imperial_emperor_female;Imperatrix;;;;;;;;;;;;;x
+imperial_emperor_title_ruler_consort;Imperator;;;;;;;;;;;;;x
+imperial_emperor_title_ruler_consort_female;Imperatrix;;;;;;;;;;;;;x
+
+barony_imperial;Baronia;;;;;;;;;;;;;x
+barony_of_imperial;Baronia of;;;;;;;;;;;;;x
+temple_barony_imperial;Aedis;;;;;;;;;;;;;x
+temple_barony_of_imperial;Aedis of;;;;;;;;;;;;;x
+city_barony_imperial;Polis;;;;;;;;;;;;;x
+city_barony_of_imperial;Polis of;;;;;;;;;;;;;x
+imperial_county;Comitatus;;;;;;;;;;;;;x
+imperial_county_of;Comitatus of;;;;;;;;;;;;;x
+imperial_duchy;Prefecture;;;;;;;;;;;;;x
+imperial_duchy_of;Prefecture of;;;;;;;;;;;;;x
+imperial_kingdom;Province;;;;;;;;;;;;;x
+imperial_kingdom_of;Province of;;;;;;;;;;;;;x
+imperial_empire;Imperium;;;;;;;;;;;;;x
+imperial_empire_of;Imperium of;;;;;;;;;;;;;x
+
+warlord_duke;Centurio;;;;;;;;;;;;;x
+warlord_duke_female;Centuria;;;;;;;;;;;;;x
+warlord_duke_title_ruler_consort;Centurio;;;;;;;;;;;;;x
+warlord_duke_title_ruler_consort;Centuria;;;;;;;;;;;;;x
+warlord_king;Legatus;;;;;;;;;;;;;x
+warlord_king_female;Legata;;;;;;;;;;;;;x
+warlord_king_title_ruler_consort;Rex;;;;;;;;;;;;;x
+warlord_king_title_ruler_consort_female;Regina;;;;;;;;;;;;;x
+
+summer_count;Lord;;;;;;;;;;;;;x
+summer_count_female;Lady;;;;;;;;;;;;;x
+summer_count_title_ruler_consort;Lord;;;;;;;;;;;;;x
+summer_count_title_ruler_consort;Lady;;;;;;;;;;;;;x
+summer_duke;Prince;;;;;;;;;;;;;x
+summer_duke_female;Princess;;;;;;;;;;;;;x
+summer_duke_title_ruler_consort;Prince;;;;;;;;;;;;;x
+summer_duke_title_ruler_consort;Princess;;;;;;;;;;;;;x
+summer_king;King;;;;;;;;;;;;;x
+summer_king_female;Queen;;;;;;;;;;;;;x
+summer_king_title_ruler_consort;King;;;;;;;;;;;;;x
+summer_king_title_ruler_consort_female;Queen;;;;;;;;;;;;;x
+summer_emperor;High King;;;;;;;;;;;;;x
+summer_emperor_female;High Queen;;;;;;;;;;;;;x
+summer_emperor_title_ruler_consort;High King;;;;;;;;;;;;;x
+summer_emperor_title_ruler_consort_female;High Queen;;;;;;;;;;;;;x
+
+

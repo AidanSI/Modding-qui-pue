@@ -1,0 +1,88 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+high_denrian;High Denrian;;;;;;;;;;;;;x
+imperial;Imperial;;;;;;;;;;;;;x
+septimian;Septimian;;;;;;;;;;;;;x
+soltarian;Soltarian;;;;;;;;;;;;;x
+elisian;Elisian;;;;;;;;;;;;;x
+orates;Orates;;;;;;;;;;;;;x
+
+west_denrian;West Denrian;;;;;;;;;;;;;x
+caeri;Caeria;;;;;;;;;;;;;x
+cinigalian;Cinigalian;;;;;;;;;;;;;x
+
+east_denrian;East Denrian;;;;;;;;;;;;;x
+solertian;Solertian;;;;;;;;;;;;;x
+vigiles;Vigiles;;;;;;;;;;;;;x
+legenti;Legenti;;;;;;;;;;;;;x
+
+ceresian;Ceresian;;;;;;;;;;;;;x
+brennian;Brennian;;;;;;;;;;;;;x
+orthaith;Orthaith;;;;;;;;;;;;;x
+abrain;Abrain;;;;;;;;;;;;;x
+exiles;Exiles;;;;;;;;;;;;;x
+
+amalian;Amalian;;;;;;;;;;;;;x
+
+dawn_opinion;Dawn Opinion;;;;;;;;;;;;;x
+blood_cult_opinion;Blood Cult Opinion;;;;;;;;;;;;;x
+snake_cult_opinion;Snake Cult Opinion;;;;;;;;;;;;;x
+sun_church_opinion;Sun Church Opinion;;;;;;;;;;;;;x
+moon_church_opinion;Moon Church Opinion;;;;;;;;;;;;;x
+ancient_gods_opinion;Ancient Gods Opinion;;;;;;;;;;;;;x
+veluath_opinion;Veluathist Opinion;;;;;;;;;;;;;x
+
+denrian;Denrian;;;;;;;;;;;;;x
+dawn;Dawn;;;;;;;;;;;;;x
+dawn_DESC;The Denrian Pantheon known as the Dawn is by far the most widespread religion in all of Denria. Originating from the shrouded lands of Amalia, the Church of the Dawn is a polytheistic religion which follows the teachings of Althea, Ercaleus and Eucathysus - a holy trinity of benevolent deities. Last but not least, most worship fire, as it is believed to be the creation of Ercaleus, the dragon-god.;;;;;;;;;;;;;x
+blood_cult;Blood Cult;;;;;;;;;;;;;x
+blood_cult_DESC;A fanatical sect which empowers its followers through forbidden blood rituals. Although these cultists still worship the Holy Trinity of the Dawn, it is rumoured that they have found a much more powerful and mysterious entity to send their pleas to.;;;;;;;;;;;;;x
+snake_cult;Snake Cult;;;;;;;;;;;;;x
+snake_cult_DESC;The Snake Cult emerged from the schismatic behaviour of the worshippers of The Great Snake, a deity which preceded Eucathysus of the Dawn. Blood rituals and human sacrifices are a common way to pay respect to the Snake God. Those who are sacrificed their insatiable god suffer a fate worst than death.;;;;;;;;;;;;;x
+sun_church;Sun Church;;;;;;;;;;;;;x
+sun_church_DESC;TBA;;;;;;;;;;;;;x
+moon_church;Moon Church;;;;;;;;;;;;;x
+moon_church_DESC;A sect which thrives in darkness, the so-called Church of the Moon rejected the Sun and the Dawn in favour of the cold embrace of the shadows. Worshippers of the Moon have been known to practice necromancy, a type of magic outlawed by both Humans and Elves in Denria.;;;;;;;;;;;;;x
+
+ceresian;Ceresian;;;;;;;;;;;;;x
+ancient_gods;Ancient Gods;;;;;;;;;;;;;x
+ancient_gods_DESC;The Ceresians of Denria believe in the existence of two main divine entities: Naneth - Goddess of winter and summer - and Athalian - Goddess of spring and autumn. This dualistic faith resolves around a pacifistic mindset of equality and tolerance, which historically did not fare well with the warlike mindset of the invading Humans.;;;;;;;;;;;;;x
+veluath;Veluathist;;;;;;;;;;;;;x
+veluath_DESC;Veluath is the long-forgotten Goddess of War of Ceresia. Unlike her mothers, Naneth and Athalian, she desires retribution against the Humans who butchered her people and invaded her lands.;;;;;;;;;;;;;x
+
+GOD_GODS;The Gods;;;;;;;;;;;;;x
+GOD_DAWN;The Dawn;;;;;;;;;;;;;x
+GOD_ALTHEA;Althea;;;;;;;;;;;;;x
+GOD_ERCALEUS;Ercaleus;;;;;;;;;;;;;x
+GOD_EUCATHYSUS;Eucathysus;;;;;;;;;;;;;x
+GOD_DAHAKA;The Dahaka;;;;;;;;;;;;;x
+GOD_SUN;The Sun;;;;;;;;;;;;;x
+GOD_MOON;The Moon;;;;;;;;;;;;;x
+GOD_NANETH;Naneth;;;;;;;;;;;;;x
+GOD_ATHALIAN;Athalian;;;;;;;;;;;;;x
+GOD_VELUATH;Veluath;;;;;;;;;;;;;x
+
+VELUATH_WRATH;War of Wrath;;;;;;;;;;;;;x
+
+worship_althea;Worship Althea;;;;;;;;;;;;;x
+worship_althea_desc;Dedicate your life to Althea, goddess of life, death and fertility.;;;;;;;;;;;;;x
+worship_eucathysus;Worship Eucathysus;;;;;;;;;;;;;x
+worship_eucathysus_desc;Dedicate your life to Eucathysus, god of mysteries, science and doctors.;;;;;;;;;;;;;x
+worship_ercaleus;Worship Ercaleus;;;;;;;;;;;;;x
+worship_ercaleus_desc;Dedicate your life to Ercaleus, god of war, order and fire.;;;;;;;;;;;;;x
+renounce_deity;Renouce Deity;;;;;;;;;;;;;x
+renounce_deity_desc;My current dedication to one of the three divine entities of the Dawn does not suit my lifestyle. Perhaps is it time to seek the favor of another deity?;;;;;;;;;;;;;x
+
+create_pontifex_dawn;Instaure a Great Pontificate;;;;;;;;;;;;;x
+create_pontifex_dawn_desc;Our religion is decentralized and prone to heresy. By centralizing all power in the hands of a Pontifex Maximus, it will be easier to control and regulate the Faith.;;;;;;;;;;;;;x
+
+jizya_tax;Monachus Tax;;;;;;;;;;;;;x
+desc_jizya_tax;A Tax on those who do not worship the Dawn, heaver than the standard bureaucratic taxation.;;;;;;;;;;;;;x
+POLL_TAX_DESC;Population of other religious groups pay the Monachus Tax;;;;;;;;;;;;;x
+
+secret_religious_society_dawn;Althea's Chosen;;;;;;;;;;;;;x
+secret_religious_society_blood_cult;The Awoken;;;;;;;;;;;;;x
+secret_religious_society_snake_cult;The Spawns of the Snake;;;;;;;;;;;;;x
+secret_religious_society_sun_church;Children of the Sun;;;;;;;;;;;;;x
+secret_religious_society_moon_church;The Brotherhood;;;;;;;;;;;;;x
+secret_religious_society_ancient_gods;The Old Believers;;;;;;;;;;;;;x
+secret_religious_society_veluath;The Apostles of Veluath;;;;;;;;;;;;;x

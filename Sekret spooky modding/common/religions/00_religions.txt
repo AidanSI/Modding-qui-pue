@@ -1,0 +1,396 @@
+# Religion-specific opinion can be added to modifiers (E.G., norse_pagan_opinion = 5), but the modifier *has* to be defined in 00_modifier_definitions.txt as well. It also needs localisation. Works for groups as well
+
+# join_crusade_if_bordering_hostile = yes # The AI won't refrain from joining a crusade simply because it borders a heathen/heretic realm
+
+# This trigger defines who can see a character's secret religion. The character with the secret religion is FROM, while the viewer is ROOT
+# Characters can always see their own secret religion. The observer can see all secret religions
+secret_religion_visibility_trigger = {
+	OR = {
+		secret_religion = FROM
+		FROM = {
+			has_character_flag = confessed_secret_religion_to_@ROOT
+		}
+		AND = {
+			ai = no
+			has_global_flag = ancrel_debug
+		}
+	}
+}
+
+ceresian = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	crusade_cb = crusade
+	playable = yes
+	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+	
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 1	# try to convert if ai_zeal is high	
+	color = { 145 216 110}
+		
+	ancient_gods = {
+		graphical_culture = westerngfx
+
+		icon = 32
+		heresy_icon = 33
+		
+		color = { 145 216 110 }
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_HOLY_SCRIPTURES
+		priest_title = SHAMAN
+		
+		high_god_name = GOD_GODS
+		
+		god_names = {
+			GOD_NANETH GOD_ATHALIAN
+		}
+		
+		evil_god_names = {
+			GOD_VELUATH
+		}
+
+		uses_jizya_tax = yes
+		
+		investiture = no
+		can_have_antipopes = no
+		can_grant_divorce = yes
+		female_temple_holders = yes
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		can_grant_divorce = yes
+		priests_can_marry = yes
+		
+		uses_decadence = yes
+
+		peace_piety_gain = 2.0
+
+		character_modifier = {
+			diplomacy = 1
+			stewardship = 1
+			learning = 1
+			martial = -3
+		}
+
+		female_temple_holders = yes
+		priests_can_inherit = no
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+
+	veluath = {
+		graphical_culture = westerngfx
+
+		icon = 32
+		heresy_icon = 33
+		
+		color = { 168 68 21 }
+		parent = ancient_gods
+
+		crusade_name = VELUATH_WRATH
+		scripture_name = THE_HOLY_SCRIPTURES
+		priest_title = SHAMAN
+		
+		high_god_name = GOD_VELUATH
+		
+		god_names = {
+			GOD_VELUATH
+		}
+		
+		evil_god_names = {
+			GOD_DAWN
+		}
+
+		can_call_crusade = yes
+		female_temple_holders = yes
+		priests_can_inherit = no
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		can_grant_divorce = yes
+
+		allow_looting = yes
+
+		character_modifier = {
+			martial = 2
+			combat_rating = 1
+			stewardship = -2
+		}
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+}
+
+denrian = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	crusade_cb = crusade
+	playable = yes
+	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+	
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 2 # always try to convert
+	
+	color = { 0.8 0.8 0.6 }
+		
+	dawn = {
+		graphical_culture = westerngfx
+
+		icon = 46
+		heresy_icon = 47
+		
+		color = { 0.8 0.7 0.2 }
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_HOLY_SCRIPTURES
+		priest_title = PRIEST
+		
+		high_god_name = GOD_DAWN
+		
+		god_names = {
+			GOD_ALTHEA GOD_ERCALEUS GOD_EUCATHYSUS
+		}
+		
+		evil_god_names = {
+			GOD_DAHAKA
+		}
+
+		uses_jizya_tax = yes
+		
+		investiture = no
+		can_have_antipopes = no
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_claim = yes
+		can_call_crusade = no
+		can_retire_to_monastery = yes
+		priests_can_marry = yes
+
+		peace_piety_gain = 1.0
+
+		character_modifier = {
+			learning = 2
+			blood_cult_opinion = 15
+			snake_cult_opinion = -100
+		}
+
+		female_temple_holders = yes
+		priests_can_inherit = no
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+
+	blood_cult = {
+		graphical_culture = westerngfx
+
+		icon = 46
+		heresy_icon = 47
+		
+		color = { 0.5 0.5 0.9 }
+		parent = dawn
+		
+		crusade_name = CRUSADE
+
+		high_god_name = GOD_DAWN
+		
+		god_names = {
+			GOD_ALTHEA GOD_ERCALEUS GOD_EUCATHYSUS
+		}
+		
+		evil_god_names = {
+			GOD_DAHAKA
+		}
+
+		can_call_crusade = yes
+		female_temple_holders = yes
+		priests_can_inherit = no
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		can_grant_divorce = yes
+
+		uses_decadence = yes
+
+		allow_looting = yes
+
+		character_modifier = {
+			martial = 2
+			combat_rating = 1
+			stewardship = -1
+			dawn_opinion = 15
+		}
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+
+	snake_cult = {
+		graphical_culture = westerngfx
+
+		icon = 46
+		heresy_icon = 47
+		
+		color = { 0.7 0.7 0.4 }
+		parent = dawn
+		
+		crusade_name = CRUSADE
+
+		high_god_name = GOD_DAHAKA
+		
+		god_names = {
+			GOD_DAHAKA
+		}
+		
+		evil_god_names = {
+			GOD_ALTHEA GOD_ERCALEUS GOD_EUCATHYSUS
+		}
+
+		allow_looting = yes
+		peace_prestige_loss = yes
+		allow_viking_invasion = yes
+		max_wives = 4
+		aggression = 10
+
+		character_modifier = {
+			dawn_opinion = -100
+		}
+
+		attacking_same_religion_piety_loss = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = no
+		priests_can_inherit = yes
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	sun_church = {
+		graphical_culture = westerngfx
+
+		icon = 49
+		heresy_icon = 50
+		
+		color = { 0.7 0 0.5 }
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_HOLY_SCRIPTURES
+		priest_title = PRIEST
+		
+		high_god_name = GOD_SUN
+		
+		god_names = {
+			GOD_GOD GOD_SUN
+		}
+		
+		evil_god_names = {
+			GOD_MOON
+		}
+		
+		can_grant_invasion_cb = invasion
+		can_call_crusade = no
+		priests_can_inherit = yes
+		can_retire_to_monastery = yes
+		priests_can_marry = yes
+
+		character_modifier = {
+			dawn_opinion = 10
+		}
+		
+		can_retire_to_monastery = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+	}
+	
+	moon_church = {
+		graphical_culture = westerngfx
+		
+		icon = 49
+		heresy_icon = 50
+		
+		color = { 0.7 0.7 0.1 }
+		parent = sun_church
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_HOLY_SCRIPTURES
+		priest_title = PRIEST
+		
+		high_god_name = GOD_MOON
+		
+		god_names = {
+			GOD_MOON
+		}
+		
+		evil_god_names = {
+			GOD_SUN
+		}
+		
+		autocephaly = yes
+		can_excommunicate = no
+		can_grant_divorce = no
+		can_call_crusade = no
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+	}
+}
+
+pagan_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	playable = yes
+	hostile_within_group = yes
+	
+	ai_convert_same_group = 2 # always try to convert
+	ai_convert_other_group = 0	# never try to convert
+	ai_fabricate_claims = no
+	
+	color = { 0.6 0.0 0.0 }
+	
+	# Names given only to Pagan characters (base names)
+	male_names = {
+		Anund Asbjörn Aslak Audun Bagge Balder Brage Egil Emund Frej Gnupa Gorm Gudmund Gudröd Hardeknud Helge Odd Orm 
+		Orvar Ottar Rikulfr Rurik Sigbjörn Styrbjörn Starkad Styrkar Sämund Sölve Sörkver Thorolf Tjudmund Toke Tolir 
+		Torbjörn Torbrand Torfinn Torgeir Toste Tyke
+	}
+	female_names = {
+		Aslaug Bothild Björg Freja Grima Gytha Kráka Malmfrid Thora Thordis Thyra Ragnfrid Ragnhild Svanhild Ulvhilde
+	}
+
+	pagan = { # Use for misc other pagans
+		graphical_culture = westerngfx
+
+		icon = 5
+		
+		color = { 0.6 0.0 0.0 }
+		
+		high_god_name = GOD_THE_CREATOR
+		
+		god_names = {
+			GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		priests_can_marry = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		defensive_attrition = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		dislike_tribal_organization = yes
+		
+		dynamic_cult = no
+		secret_religion = no
+	}
+}

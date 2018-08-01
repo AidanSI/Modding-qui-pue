@@ -1,0 +1,416 @@
+ # Triggers are in Province scope. The From Scope contains the settlement holder (character)
+ # start trigger is in title scope.
+ 
+ #<tag> = {
+ #	desc = description used in the tooltip of the building
+ #	trigger = used for tech requirement of the building, set to 0 if no requirement so it can be build automatically on new games
+ #	gold_cost = cost to build the building
+ #	build_time = time to build, in days
+ #	
+ #	ai_creation_factor = weight that the AI uses to determine what building to build
+ #	extra_tech_building_start = when starting a new game this building will be pre-built if the province has higher tech than the requirement + this + random 0-1
+ #}
+ 
+castle = {
+	ca_culture_high_denrian_upper_1 = {
+		desc = ca_culture_high_denrian_upper_1_desc
+		potential = {
+			OR = {
+				culture_group = high_denrian
+				has_building = ca_culture_high_denrian_upper_1
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture_group = high_denrian
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 150
+		build_time = 730
+		tax_income = 2.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_high_denrian_upper_2 = {
+		desc = ca_culture_high_denrian_upper_1_desc
+		potential = {
+			OR = {
+				culture_group = high_denrian
+				has_building = ca_culture_high_denrian_upper_1
+				has_building = ca_culture_high_denrian_upper_2
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1 
+			ROOT = {
+				culture_group = high_denrian
+			}
+		}
+		upgrades_from = ca_culture_high_denrian_upper_1
+		gold_cost = 300
+		build_time = 1095
+		tax_income = 3
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_high_denrian_upper_3 = {
+		desc = ca_culture_high_denrian_upper_1_desc
+		potential = {
+			OR = {
+				culture_group = high_denrian
+				has_building = ca_culture_high_denrian_upper_1
+				has_building = ca_culture_high_denrian_upper_2
+				has_building = ca_culture_high_denrian_upper_3
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2 
+			ROOT = {
+				culture_group = high_denrian
+			}
+		}
+		upgrades_from = ca_culture_high_denrian_upper_2
+		gold_cost = 400
+		build_time = 2190
+		tax_income = 3
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_high_denrian_upper_4 = {
+		desc = ca_culture_high_denrian_upper_1_desc
+		potential = {
+			OR = {
+				culture_group = high_denrian
+				has_building = ca_culture_high_denrian_upper_1
+				has_building = ca_culture_high_denrian_upper_2
+				has_building = ca_culture_high_denrian_upper_3
+				has_building = ca_culture_high_denrian_upper_4
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4 
+			ROOT = {
+				culture_group = high_denrian
+			}
+		}
+		upgrades_from = ca_culture_high_denrian_upper_3
+		gold_cost = 500
+		build_time = 2190
+		tax_income = 3.5
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+}
+
+city = {
+	ca_culture_high_denrian_legionary_1 = {
+		desc = ca_culture_high_denrian_legionary_1_desc
+		potential = {
+			OR = {
+				culture_group = high_denrian
+				has_building = ca_culture_high_denrian_legionary_1
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 0 
+			ROOT = {
+				culture_group = high_denrian
+			}
+		}
+		prerequisites = { ct_wall_1 }
+		gold_cost = 150
+		build_time = 730
+		heavy_infantry = 30
+		heavy_infantry_defensive = 0.15
+		fort_level = 0.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_high_denrian_legionary_2 = {
+		desc = ca_culture_high_denrian_legionary_1_desc
+		potential = {
+			OR = {
+				culture_group = high_denrian
+				has_building = ca_culture_high_denrian_legionary_1
+				has_building = ca_culture_high_denrian_legionary_2
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 1 
+			ROOT = {
+				culture_group = high_denrian
+			}
+		}
+		upgrades_from = ca_culture_high_denrian_legionary_1
+		gold_cost = 300
+		build_time = 1095
+		heavy_infantry = 40
+		heavy_infantry_defensive = 0.2
+		fort_level = 1
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_high_denrian_legionary_3 = {
+		desc = ca_culture_high_denrian_legionary_1_desc
+		potential = {
+			OR = {
+				culture_group = high_denrian
+				has_building = ca_culture_high_denrian_legionary_1
+				has_building = ca_culture_high_denrian_legionary_2
+				has_building = ca_culture_high_denrian_legionary_3
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 2 
+			ROOT = {
+				culture_group = high_denrian
+			}
+		}
+		upgrades_from = ca_culture_high_denrian_legionary_2
+		gold_cost = 400
+		build_time = 2190
+		heavy_infantry = 45
+		heavy_infantry_defensive = 0.2
+		fort_level = 1
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_high_denrian_legionary_4 = {
+		desc = ca_culture_high_denrian_legionary_1_desc
+		potential = {
+			OR = {
+				culture_group = high_denrian
+				has_building = ca_culture_high_denrian_legionary_1
+				has_building = ca_culture_high_denrian_legionary_2
+				has_building = ca_culture_high_denrian_legionary_3
+				has_building = ca_culture_high_denrian_legionary_4
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 4 
+			ROOT = {
+				culture_group = high_denrian
+			}
+		}
+		upgrades_from = ca_culture_high_denrian_legionary_3
+		gold_cost = 500
+		build_time = 2190
+		heavy_infantry = 50
+		heavy_infantry_defensive = 0.25
+		fort_level = 1.5
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_civium_district_1 = {
+		desc = ca_culture_civium_district_1_desc
+		potential = {
+			OR = {
+				culture = imperial
+				has_building = ca_culture_civium_district_1
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 0 
+			ROOT = {
+				culture = imperial
+			}
+		}
+		prerequisites = { ct_wall_1 }
+		gold_cost = 150
+		build_time = 730
+		tax_income = 3.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_civium_district_2 = {
+		desc = ca_culture_civium_district_1_desc
+		potential = {
+			OR = {
+				culture = imperial
+				has_building = ca_culture_civium_district_1 
+				has_building = ca_culture_civium_district_2
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 1 
+			ROOT = {
+				culture = imperial
+			}
+		}
+		upgrades_from = ca_culture_civium_district_1 
+		gold_cost = 300
+		build_time = 1095
+		tax_income = 4.5
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_civium_district_3 = {
+		desc = ca_culture_civium_district_1_desc
+		potential = {
+			OR = {
+				culture_group = high_denrian
+				has_building = ca_culture_civium_district_1 
+				has_building = ca_culture_civium_district_2
+				has_building = ca_culture_civium_district_3
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 2 
+			ROOT = {
+				culture = imperial
+			}
+		}
+		upgrades_from = ca_culture_civium_district_2
+		gold_cost = 400
+		build_time = 2190
+		tax_income = 5.5
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_civium_district_4 = {
+		desc = ca_culture_civium_district_1_desc
+		potential = {
+			OR = {
+				culture = imperial
+				has_building = ca_culture_civium_district_1 
+				has_building = ca_culture_civium_district_2 
+				has_building = ca_culture_civium_district_3 
+				has_building = ca_culture_civium_district_4
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 4 
+			ROOT = {
+				culture = imperial
+			}
+		}
+		upgrades_from = ca_culture_civium_district_3
+		gold_cost = 500
+		build_time = 2190
+		tax_income = 6.5
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_legionary_barracks_1 = {
+		desc = ca_culture_legionary_barracks_1_desc
+		potential = {
+			OR = {
+				culture = imperial
+				has_building = ca_culture_legionary_barracks_1
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 0 
+			ROOT = {
+				culture = imperial
+			}
+		}
+		prerequisites = { ct_wall_1 }
+		gold_cost = 150
+		build_time = 730
+		garrison_size = 0.4
+		retinuesize = 25
+		pikemen = 30
+		pikemen_defensive = 0.1
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_legionary_barracks_2 = {
+		desc = ca_culture_legionary_barracks_1_desc
+		potential = {
+			OR = {
+				culture = imperial
+				has_building = ca_culture_legionary_barracks_1 
+				has_building = ca_culture_legionary_barracks_2
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 1 
+			ROOT = {
+				culture = imperial
+			}
+		}
+		upgrades_from = ca_culture_legionary_barracks_1 
+		gold_cost = 300
+		build_time = 1095
+		garrison_size = 0.5
+		retinuesize = 30
+		pikemen = 35
+		pikemen_defensive = 0.15
+
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_legionary_barracks_3 = {
+		desc = ca_culture_legionary_barracks_1_desc
+		potential = {
+			OR = {
+				culture = imperial
+				has_building = ca_culture_legionary_barracks_1 
+				has_building = ca_culture_legionary_barracks_2
+				has_building = ca_culture_legionary_barracks_3
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 2 
+			ROOT = {
+				culture = imperial
+			}
+		}
+		upgrades_from = ca_culture_legionary_barracks_2
+		gold_cost = 400
+		build_time = 2190
+		garrison_size = 0.6
+		retinuesize = 40
+		pikemen = 40
+		pikemen_defensive = 0.15
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_legionary_barracks_4 = {
+		desc = ca_culture_legionary_barracks_1_desc
+		potential = {
+			OR = {
+				culture = imperial
+				has_building = ca_culture_legionary_barracks_1 
+				has_building = ca_culture_legionary_barracks_2 
+				has_building = ca_culture_legionary_barracks_3 
+				has_building = ca_culture_legionary_barracks_4
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 4 
+			ROOT = {
+				culture = imperial
+			}
+		}
+		upgrades_from = ca_culture_legionary_barracks_3
+		gold_cost = 500
+		build_time = 2190
+		garrison_size = 0.7
+		retinuesize = 50
+		pikemen = 50
+		pikemen_defensive = 0.2
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+}
+
