@@ -49,6 +49,11 @@ ancient_gods_DESC;The Ceresians of Denria believe in the existence of two main d
 veluath;Veluathist;;;;;;;;;;;;;x
 veluath_DESC;Veluath is the long-forgotten Goddess of War of Ceresia. Unlike her mothers, Naneth and Athalian, she desires retribution against the Humans who butchered her people and invaded her lands.;;;;;;;;;;;;;x
 
+ogre_pagan;Ogre;;;;;;;;;;;;;x
+ogre_pagan_DESC;TBA;;;;;;;;;;;;;x
+ogre_pagan_reformed;Aretri;;;;;;;;;;;;;x
+ogre_pagan_reformed_DESC;TBA;;;;;;;;;;;;;x
+
 GOD_GODS;The Gods;;;;;;;;;;;;;x
 GOD_DAWN;The Dawn;;;;;;;;;;;;;x
 GOD_ALTHEA;Althea;;;;;;;;;;;;;x
@@ -60,6 +65,8 @@ GOD_MOON;The Moon;;;;;;;;;;;;;x
 GOD_NANETH;Naneth;;;;;;;;;;;;;x
 GOD_ATHALIAN;Athalian;;;;;;;;;;;;;x
 GOD_VELUATH;Veluath;;;;;;;;;;;;;x
+GOD_SKY;The Sky;;;;;;;;;;;;;x
+GOD_ARETRI;Aretri;;;;;;;;;;;;;x
 
 VELUATH_WRATH;War of Wrath;;;;;;;;;;;;;x
 
@@ -86,3 +93,5 @@ secret_religious_society_sun_church;Children of the Sun;;;;;;;;;;;;;x
 secret_religious_society_moon_church;The Brotherhood;;;;;;;;;;;;;x
 secret_religious_society_ancient_gods;The Old Believers;;;;;;;;;;;;;x
 secret_religious_society_veluath;The Apostles of Veluath;;;;;;;;;;;;;x
+secret_religious_society_ogre_pagan;The Mountain Kings;;;;;;;;;;;;;x
+secret_religious_society_ogre_pagan_reformed;The Sons of Aretri;;;;;;;;;;;;;x

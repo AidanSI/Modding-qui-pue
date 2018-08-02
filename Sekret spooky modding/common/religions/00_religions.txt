@@ -361,36 +361,97 @@ pagan_group = {
 		Aslaug Bothild Björg Freja Grima Gytha Kráka Malmfrid Thora Thordis Thyra Ragnfrid Ragnhild Svanhild Ulvhilde
 	}
 
-	pagan = { # Use for misc other pagans
+	ogre_pagan_reformed = { 
 		graphical_culture = westerngfx
 
-		icon = 5
+		icon = 29
+		heresy_icon = 30
 		
-		color = { 0.6 0.0 0.0 }
+		ai_convert_other_group = 2 # always try to convert
 		
-		high_god_name = GOD_THE_CREATOR
+		color = { 0.6 0.6 0.6 }
+		
+		high_god_name = GOD_ARETRI
 		
 		god_names = {
-			GOD_THE_SPIRITS GOD_THE_ANCESTORS
+			GOD_SKY GOD_SUN GOD_ARETRI
 		}
 		evil_god_names = {
-			THE_DARK_SPIRITS
+			THE_DARKNESS
 		}
+		
+		unit_modifier = {
+			garrison_size = 0.2
+			levy_size = 0.2
+			
+			key = "DEF_RELIGION"
+		}
+		
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_LEGENDS
-		priest_title = PRIEST
+		priest_title = SHAMAN
 		priests_can_marry = yes
-		female_temple_holders = yes
+		allow_looting = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
 		max_consorts = 3
 		
-		defensive_attrition = yes
+		aggression = 0.5 # AI aggression factor
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 6
+		religious_clothing_priest = 4
+		
+		allow_in_ruler_designer = no
+	}		
+	
+	ogre_pagan = { 
+	
+		graphical_culture = westerngfx
+
+		icon = 28
+		heresy_icon = 30
+		
+		color = { 0.5 0.5 0.5 }
+		
+		high_god_name = GOD_SKY
+		
+		god_names = {
+			GOD_SKY GOD_SUN GOD_ARETRI
+		}
+		evil_god_names = {
+			THE_DARKNESS
+		}
+		
+		unit_modifier = {
+			garrison_size = 0.2
+			levy_size = 0.2
+			
+			key = "DEF_RELIGION"
+		}
+	
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		
+		defensive_attrition = yes
+		priests_can_marry = yes
+		allow_looting = yes
+		peace_piety_gain = 1.0
+
+		raised_vassal_opinion_loss = no
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = ogre_pagan_reformed
+		
+		short_reign_opinion_year_mult = 1.5
+		
+		aggression = 0.5 # AI aggression factor
+		
+		religious_clothing_head = 6
+		religious_clothing_priest = 4
 		
 		dislike_tribal_organization = yes
 		
-		dynamic_cult = no
-		secret_religion = no
+		can_demand_religious_conversion = no
 	}
 }

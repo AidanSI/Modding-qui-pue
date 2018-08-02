@@ -12,6 +12,8 @@ secretly_dawn = {
 		secretly_moon_church
 		secretly_ancient_gods
 		secretly_veluath
+		secretly_ogre_pagan
+		secretly_ogre_pagan_reformed
 	}
 
 	is_visible = {
@@ -46,6 +48,8 @@ secretly_blood_cult = {
 		secretly_moon_church
 		secretly_ancient_gods
 		secretly_veluath
+		secretly_ogre_pagan
+		secretly_ogre_pagan_reformed
 	}
 
 	is_visible = {
@@ -80,6 +84,8 @@ secretly_snake_cult = {
 		secretly_moon_church
 		secretly_ancient_gods
 		secretly_veluath
+		secretly_ogre_pagan
+		secretly_ogre_pagan_reformed
 	}
 
 	is_visible = {
@@ -114,6 +120,8 @@ secretly_sun_church = {
 		secretly_moon_church
 		secretly_ancient_gods
 		secretly_veluath
+		secretly_ogre_pagan
+		secretly_ogre_pagan_reformed
 	}
 
 	is_visible = {
@@ -148,6 +156,8 @@ secretly_moon_church = {
 		secretly_sun_church
 		secretly_ancient_gods
 		secretly_veluath
+		secretly_ogre_pagan
+		secretly_ogre_pagan_reformed
 	}
 
 	is_visible = {
@@ -182,6 +192,8 @@ secretly_ancient_gods = {
 		secretly_moon_church
 		secretly_dawn
 		secretly_veluath
+		secretly_ogre_pagan
+		secretly_ogre_pagan_reformed
 	}
 
 	is_visible = {
@@ -216,6 +228,80 @@ secretly_veluath = {
 		secretly_moon_church
 		secretly_dawn
 		secretly_ancient_gods
+		secretly_ogre_pagan
+		secretly_ogre_pagan_reformed
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = secret_religious_society_veluath
+			AND = {
+				is_close_relative = FROM
+				trait = secretly_veluath
+			}
+		}
+	}
+
+	same_opinion = 15
+	
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
+
+secretly_ogre_pagan = {
+	potential = {
+		NOT = {
+			religion = ogre_pagan
+		}
+	}
+	
+	opposites = {
+		secretly_blood_cult
+		secretly_snake_cult
+		secretly_sun_church
+		secretly_moon_church
+		secretly_dawn
+		secretly_ancient_gods
+		secretly_veluath
+		secretly_ogre_pagan_reformed
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = secret_religious_society_veluath
+			AND = {
+				is_close_relative = FROM
+				trait = secretly_veluath
+			}
+		}
+	}
+
+	same_opinion = 15
+	
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
+
+secretly_ogre_pagan_reformed = {
+	potential = {
+		NOT = {
+			religion = ogre_pagan_reformed
+		}
+	}
+	
+	opposites = {
+		secretly_blood_cult
+		secretly_snake_cult
+		secretly_sun_church
+		secretly_moon_church
+		secretly_dawn
+		secretly_ancient_gods
+		secretly_ogre_pagan
+		secretly_veluath
 	}
 
 	is_visible = {
