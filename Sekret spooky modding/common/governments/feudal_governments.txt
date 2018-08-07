@@ -26,10 +26,10 @@ feudal_governments = {
 		potential = {
 			NAND = {
 				controls_religion = yes
-				NOT = { religion_group = ceresian }
+				NOT = { religion_group = old_denrian }
 				NOT = { religion_group = denrian }
 			}
-			religion_group = ceresian
+			religion_group = old_denrian
 			is_patrician = no
 		}
 		
@@ -87,7 +87,7 @@ feudal_governments = {
 				culture_group = east_denrian
 				culture_group = high_denrian
 			}
-			NOT = { religion_group = ceresian }
+			NOT = { religion_group = old_denrian }
 			higher_tier_than = baron
 			religion_group = denrian
 			is_patrician = no
@@ -154,7 +154,7 @@ feudal_governments = {
 				has_law = ze_administration_laws_0
 				tier = BARON 
 			}
-			NOT = { religion_group = ceresian }
+			NOT = { religion_group = old_denrian }
 			NOT = { is_government_potential = imperial_denrian_government }
 			NOT = { is_government_potential = imperial_warlord_government }
 			is_patrician = no
@@ -215,7 +215,7 @@ feudal_governments = {
 		potential = {
 			culture_group = high_denrian
 			religion_group = denrian 
-			NOT = { religion_group = ceresian }
+			NOT = { religion_group = old_denrian }
 			NOT = { tier = EMPEROR }
 			NOT = { tier = COUNT }
 			higher_tier_than = baron
@@ -306,7 +306,7 @@ feudal_governments = {
 				}
 			}
 			NOT = { is_government_potential = imperial_warlord_government }
-			NOT = { religion_group = ceresian }
+			NOT = { religion_group = old_denrian }
 			is_patrician = no
 		}
 

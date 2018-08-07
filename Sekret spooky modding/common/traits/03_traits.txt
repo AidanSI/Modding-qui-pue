@@ -14,6 +14,7 @@ secretly_dawn = {
 		secretly_veluath
 		secretly_ogre_pagan
 		secretly_ogre_pagan_reformed
+		secretly_solertian
 	}
 
 	is_visible = {
@@ -50,6 +51,7 @@ secretly_blood_cult = {
 		secretly_veluath
 		secretly_ogre_pagan
 		secretly_ogre_pagan_reformed
+		secretly_solertian
 	}
 
 	is_visible = {
@@ -86,6 +88,7 @@ secretly_snake_cult = {
 		secretly_veluath
 		secretly_ogre_pagan
 		secretly_ogre_pagan_reformed
+		secretly_solertian
 	}
 
 	is_visible = {
@@ -122,6 +125,7 @@ secretly_sun_church = {
 		secretly_veluath
 		secretly_ogre_pagan
 		secretly_ogre_pagan_reformed
+		secretly_solertian
 	}
 
 	is_visible = {
@@ -158,6 +162,7 @@ secretly_moon_church = {
 		secretly_veluath
 		secretly_ogre_pagan
 		secretly_ogre_pagan_reformed
+		secretly_solertian
 	}
 
 	is_visible = {
@@ -194,6 +199,7 @@ secretly_ancient_gods = {
 		secretly_veluath
 		secretly_ogre_pagan
 		secretly_ogre_pagan_reformed
+		secretly_solertian
 	}
 
 	is_visible = {
@@ -230,6 +236,7 @@ secretly_veluath = {
 		secretly_ancient_gods
 		secretly_ogre_pagan
 		secretly_ogre_pagan_reformed
+		secretly_solertian
 	}
 
 	is_visible = {
@@ -266,15 +273,16 @@ secretly_ogre_pagan = {
 		secretly_ancient_gods
 		secretly_veluath
 		secretly_ogre_pagan_reformed
+		secretly_solertian
 	}
 
 	is_visible = {
 		OR = {
 			character = FROM
-			society_member_of = secret_religious_society_veluath
+			society_member_of = secret_religious_society_ogre_pagan
 			AND = {
 				is_close_relative = FROM
-				trait = secretly_veluath
+				trait = secretly_ogre_pagan
 			}
 		}
 	}
@@ -302,15 +310,53 @@ secretly_ogre_pagan_reformed = {
 		secretly_ancient_gods
 		secretly_ogre_pagan
 		secretly_veluath
+		secretly_solertian
 	}
 
 	is_visible = {
 		OR = {
 			character = FROM
-			society_member_of = secret_religious_society_veluath
+			society_member_of = secret_religious_society_ogre_pagan_reformed
 			AND = {
 				is_close_relative = FROM
-				trait = secretly_veluath
+				trait = secretly_ogre_pagan_reformed
+			}
+		}
+	}
+
+	same_opinion = 15
+	
+	random = no
+	customizer = no
+	ai_zeal = -50
+}
+
+secretly_solertian_pagan = {
+	potential = {
+		NOT = {
+			religion = solertian_pagan
+		}
+	}
+	
+	opposites = {
+		secretly_blood_cult
+		secretly_snake_cult
+		secretly_sun_church
+		secretly_moon_church
+		secretly_dawn
+		secretly_ancient_gods
+		secretly_veluath
+		secretly_ogre_pagan
+		secretly_ogre_pagan_reformed
+	}
+
+	is_visible = {
+		OR = {
+			character = FROM
+			society_member_of = secret_religious_society_solertian_pagan
+			AND = {
+				is_close_relative = FROM
+				trait = secretly_solertian_pagan
 			}
 		}
 	}

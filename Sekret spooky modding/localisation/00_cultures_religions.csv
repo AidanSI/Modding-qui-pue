@@ -30,6 +30,9 @@ sun_church_opinion;Sun Church Opinion;;;;;;;;;;;;;x
 moon_church_opinion;Moon Church Opinion;;;;;;;;;;;;;x
 ancient_gods_opinion;Ancient Gods Opinion;;;;;;;;;;;;;x
 veluath_opinion;Veluathist Opinion;;;;;;;;;;;;;x
+ogre_pagan_opinion;Ogre Pagan Opinion;;;;;;;;;;;;;x
+ogre_pagan_reformed_opinion;Aretri Opinion;;;;;;;;;;;;;x
+solertian_pagan_opinion;Solertian Opinion;;;;;;;;;;;;;x
 
 denrian;Denrian;;;;;;;;;;;;;x
 dawn;Dawn;;;;;;;;;;;;;x
@@ -43,9 +46,9 @@ sun_church_DESC;TBA;;;;;;;;;;;;;x
 moon_church;Moon Church;;;;;;;;;;;;;x
 moon_church_DESC;A sect which thrives in darkness, the so-called Church of the Moon rejected the Sun and the Dawn in favour of the cold embrace of the shadows. Worshippers of the Moon have been known to practice necromancy, a type of magic outlawed by both Humans and Elves in Denria.;;;;;;;;;;;;;x
 
-ceresian;Ceresian;;;;;;;;;;;;;x
+old_denrian;Old Denrian;;;;;;;;;;;;;x
 ancient_gods;Ancient Gods;;;;;;;;;;;;;x
-ancient_gods_DESC;The Ceresians of Denria believe in the existence of two main divine entities: Naneth - Goddess of winter and summer - and Athalian - Goddess of spring and autumn. This dualistic faith resolves around a pacifistic mindset of equality and tolerance, which historically did not fare well with the warlike mindset of the invading Humans.;;;;;;;;;;;;;x
+ancient_gods_DESC;The Ceresian Elves of Denria believe in the existence of two main divine entities: Naneth - Goddess of winter and summer - and Athalian - Goddess of spring and autumn. This dualistic faith resolves around a pacifistic mindset of equality and tolerance, which historically did not fare well with the warlike mindset of the invading Humans.;;;;;;;;;;;;;x
 veluath;Veluathist;;;;;;;;;;;;;x
 veluath_DESC;Veluath is the long-forgotten Goddess of War of Ceresia. Unlike her mothers, Naneth and Athalian, she desires retribution against the Humans who butchered her people and invaded her lands.;;;;;;;;;;;;;x
 
@@ -67,8 +70,15 @@ GOD_ATHALIAN;Athalian;;;;;;;;;;;;;x
 GOD_VELUATH;Veluath;;;;;;;;;;;;;x
 GOD_SKY;The Sky;;;;;;;;;;;;;x
 GOD_ARETRI;Aretri;;;;;;;;;;;;;x
+GOD_BHAGA;Bhaga;;;;;;;;;;;;;x
+GOD_OCEAN;The Oceans;;;;;;;;;;;;;x
+
+ZEAL;Zeal;;;;;;;;;;;;;x
 
 VELUATH_WRATH;War of Wrath;;;;;;;;;;;;;x
+
+solertian_pagan;Solertian;;;;;;;;;;;;;x
+solertian_pagan_DESC;TBA;;;;;;;;;;;;;x
 
 worship_althea;Worship Althea;;;;;;;;;;;;;x
 worship_althea_desc;Dedicate your life to Althea, goddess of life, death and fertility.;;;;;;;;;;;;;x
@@ -95,3 +105,8 @@ secret_religious_society_ancient_gods;The Old Believers;;;;;;;;;;;;;x
 secret_religious_society_veluath;The Apostles of Veluath;;;;;;;;;;;;;x
 secret_religious_society_ogre_pagan;The Mountain Kings;;;;;;;;;;;;;x
 secret_religious_society_ogre_pagan_reformed;The Sons of Aretri;;;;;;;;;;;;;x
+secret_religious_society_solertian_pagan;The Servants of Bhaga;;;;;;;;;;;;;x
+
+sympathy_pagans;Sympathy for Pagan Religions;;;;;;;;;;;;;x
+sympathy_old_denrian;Sympathy for Old Denrian Religions;;;;;;;;;;;;;x
+sympathy_denrian;Sympathy for Denrian Religions;;;;;;;;;;;;;x
