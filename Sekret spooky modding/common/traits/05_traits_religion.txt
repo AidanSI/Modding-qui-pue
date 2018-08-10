@@ -1,0 +1,32 @@
+martial_sun = {
+	monthly_character_piety = 1
+	martial = 5
+	
+	religious = yes # Lost immediately on religion change
+	
+	opposites =  {
+		explorer_sun
+	}
+	
+	opposite_opinion = -30
+	
+	customizer = no
+	random = no
+}
+
+explorer_sun = {
+	monthly_character_prestige = 1
+	stewardship = 2
+	diplomacy = 3
+	
+	religious = yes # Lost immediately on religion change
+	
+	opposites =  {
+		martial_sun
+	}
+	
+	opposite_opinion = -30
+	
+	customizer = no
+	random = no
+}

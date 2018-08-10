@@ -1,0 +1,120 @@
+targetted_decisions = {
+	embrace_explorer_sun = {
+		only_playable = yes
+		
+		filter = self
+		ai_target_filter = self
+		
+		potential = {
+			has_dlc = "Sons of Abraham"
+			is_playable = yes
+			religion = sunni
+			NOT = { 
+				OR = {
+					trait = explorer_sun
+					trait = martial_sun
+				}
+			}
+			is_adult = yes
+			prisoner = no
+		}
+		
+		allow = {
+			piety = 50
+		}
+		
+		effect = {
+			add_trait = explorer_sun
+			character_event = { id = SUN.000 tooltip = EVTTOOLTIP_SUN_000 }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.2
+				liege = { trait = explorer_sun }
+			}
+			modifier = {
+				factor = 0.005 # Slow it down
+			}
+		}
+	}
+	embrace_martial_sun = {
+		only_playable = yes
+		
+		filter = self
+		ai_target_filter = self
+		
+		potential = {	
+			has_dlc = "Sons of Abraham"
+			is_playable = yes
+			religion = sunni
+			NOT = { 
+				OR = {
+					trait = explorer_sun
+					trait = martial_sun
+				}
+			}
+			is_adult = yes
+			prisoner = no
+		}
+		
+		allow = {
+			piety = 50
+		}
+		
+		effect = {
+			add_trait = martial_sun
+			character_event = { id = SUN.001 tooltip = EVTTOOLTIP_SUN_001 }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.2
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.2
+				liege = { trait = martial_sun }
+			}
+			modifier = {
+				factor = 1.2
+				decadence = 40
+			}
+			modifier = {
+				factor = 1.2
+				decadence = 60
+			}
+			modifier = {
+				factor = 1.2
+				decadence = 80
+			}
+			modifier = {
+				factor = 0.005 # Slow it down
+			}
+		}
+	}
+}

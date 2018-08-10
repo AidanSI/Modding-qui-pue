@@ -1,0 +1,42 @@
+
+character_event = {
+	id = SUN.000
+	desc = EVTDESC_SUN_000
+	picture = GFX_evt_kaaba
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_SUN_000
+		add_trait = explorer_sun
+		if = {
+			limit = {
+				primary_title = { higher_tier_than = COUNT }
+			}
+			economy_techpoints = 25
+			culture_techpoints = 25
+			military_techpoints = 25
+		}
+	}
+}
+
+
+character_event = {
+	id = SUN.001
+	desc = EVTDESC_SUN_001
+	picture = GFX_evt_kaaba
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTA_SUN_001
+		add_trait = martial_sun
+		piety = 100
+	}
+}
