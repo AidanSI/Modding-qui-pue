@@ -6,9 +6,8 @@ targetted_decisions = {
 		ai_target_filter = self
 		
 		potential = {
-			has_dlc = "Sons of Abraham"
 			is_playable = yes
-			religion = sunni
+			religion = sun_church
 			NOT = { 
 				OR = {
 					trait = explorer_sun
@@ -59,9 +58,8 @@ targetted_decisions = {
 		ai_target_filter = self
 		
 		potential = {	
-			has_dlc = "Sons of Abraham"
 			is_playable = yes
-			religion = sunni
+			religion = sun_church
 			NOT = { 
 				OR = {
 					trait = explorer_sun
