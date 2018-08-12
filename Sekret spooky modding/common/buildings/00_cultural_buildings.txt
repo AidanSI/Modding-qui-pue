@@ -12,6 +12,228 @@
  #}
  
 castle = {
+	ca_culture_solar_temple_1 = {
+		desc = ca_culture_solar_temple_1_desc
+		potential = {
+			OR = {
+				culture = soltarian
+				culture = solay
+				has_building = ca_culture_solar_temple_1
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture = soltarian
+					culture = solay
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 150
+		build_time = 730
+		tax_income = 1.5
+		local_revolt_risk = -0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_solar_temple_2 = {
+		desc = ca_culture_solar_temple_1_desc
+		potential = {
+			OR = {
+				culture = soltarian
+				culture = solay
+				has_building = ca_culture_solar_temple_1
+				has_building = ca_culture_solar_temple_2
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1 
+			ROOT = {
+				OR = {
+					culture = soltarian
+					culture = solay
+				}
+			}
+		}
+		upgrades_from = ca_culture_solar_temple_1
+		gold_cost = 300
+		build_time = 1095
+		tax_income = 2
+		local_revolt_risk = -0.05
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_solar_temple_3 = {
+		desc = ca_culture_solar_temple_1_desc
+		potential = {
+			OR = {
+				culture = soltarian
+				culture = solay
+				has_building = ca_culture_solar_temple_1
+				has_building = ca_culture_solar_temple_2
+				has_building = ca_culture_solar_temple_3
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2 
+			ROOT = {
+				OR = {
+					culture = soltarian
+					culture = solay
+				}
+			}
+		}
+		upgrades_from = ca_culture_solar_temple_2
+		gold_cost = 400
+		build_time = 2190
+		tax_income = 2
+		local_revolt_risk = -0.05
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_solar_temple_4 = {
+		desc = ca_culture_solar_temple_1_desc
+		potential = {
+			OR = {
+				culture = soltarian
+				culture = solay
+				has_building = ca_culture_solar_temple_1
+				has_building = ca_culture_solar_temple_2
+				has_building = ca_culture_solar_temple_3
+				has_building = ca_culture_solar_temple_4
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4 
+			ROOT = {
+				OR = {
+					culture = soltarian
+					culture = solay
+				}
+			}
+		}
+		upgrades_from = ca_culture_solar_temple_3
+		gold_cost = 500
+		build_time = 2190
+		tax_income = 2.5
+		local_revolt_risk = -0.05
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_slave_camp_1 = {
+		desc = ca_culture_slave_camp_1_desc
+		potential = {
+			OR = {
+				culture = septimian
+				has_building = ca_culture_slave_camp_1
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = septimian
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 150
+		build_time = 730
+		light_infantry = 60
+		light_infantry_offensive = 0.1
+		archers = 40
+		archers_offensive = 0.1
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_slave_camp_2 = {
+		desc = ca_culture_slave_camp_1_desc
+		potential = {
+			OR = {
+				culture = septimian
+				has_building = ca_culture_slave_camp_1
+				has_building = ca_culture_slave_camp_2
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1 
+			ROOT = {
+				culture_group = septimian
+			}
+		}
+		upgrades_from = ca_culture_slave_camp_1
+		gold_cost = 300
+		build_time = 1095
+		light_infantry = 80
+		light_infantry_offensive = 0.1
+		archers = 50
+		archers_offensive = 0.1
+		local_revolt_risk = 0.05
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_slave_camp_3 = {
+		desc = ca_culture_slave_camp_1_desc
+		potential = {
+			OR = {
+				culture = septimian
+				has_building = ca_culture_slave_camp_1
+				has_building = ca_culture_slave_camp_2
+				has_building = ca_culture_slave_camp_3
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2 
+			ROOT = {
+				culture_group = septimian
+			}
+		}
+		upgrades_from = ca_culture_slave_camp_2
+		gold_cost = 400
+		build_time = 2190
+		light_infantry = 100
+		light_infantry_offensive = 0.1
+		archers = 70
+		archers_offensive = 0.1
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_slave_camp_4 = {
+		desc = ca_culture_slave_camp_1_desc
+		potential = {
+			OR = {
+				culture = septimian
+				has_building = ca_culture_slave_camp_1
+				has_building = ca_culture_slave_camp_2
+				has_building = ca_culture_slave_camp_3
+				has_building = ca_culture_slave_camp_4
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4 
+			ROOT = {
+				culture_group = septimian
+			}
+		}
+		upgrades_from = ca_culture_slave_camp_3
+		gold_cost = 500
+		build_time = 2190
+		light_infantry = 120
+		light_infantry_offensive = 0.1
+		archers = 80
+		archers_offensive = 0.1
+		local_revolt_risk = 0.05
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
 	ca_culture_high_denrian_upper_1 = {
 		desc = ca_culture_high_denrian_upper_1_desc
 		potential = {
@@ -102,6 +324,234 @@ castle = {
 		gold_cost = 500
 		build_time = 2190
 		tax_income = 3.5
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_soltarian_cataphracts_1 = {
+		desc = ca_culture_soltarian_cataphracts_1_desc
+		potential = {
+			OR = {
+				culture = soltarian
+				has_building = ca_culture_soltarian_cataphracts_1
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = soltarian
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 150
+		build_time = 730
+		knights = 10
+		horse_archers = 10
+		knights_offensive = 0.075
+		horse_archers_offensive = 0.075
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_soltarian_cataphracts_2 = {
+		desc = ca_culture_soltarian_cataphracts_1_desc
+		potential = {
+			OR = {
+				culture_group = soltarian
+				has_building = ca_culture_soltarian_cataphracts_1
+				has_building = ca_culture_soltarian_cataphracts_2
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1 
+			ROOT = {
+				culture_group = soltarian
+			}
+		}
+		upgrades_from = ca_culture_soltarian_cataphracts_1
+		gold_cost = 300
+		build_time = 1095
+		knights = 15
+		horse_archers = 10
+		knights_offensive = 0.075
+		horse_archers_offensive = 0.075
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_soltarian_cataphracts_3 = {
+		desc = ca_culture_soltarian_cataphracts_1_desc
+		potential = {
+			OR = {
+				culture_group = soltarian
+				has_building = ca_culture_soltarian_cataphracts_1
+				has_building = ca_culture_soltarian_cataphracts_2
+				has_building = ca_culture_soltarian_cataphracts_3
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2 
+			ROOT = {
+				culture_group = soltarian
+			}
+		}
+		upgrades_from = ca_culture_soltarian_cataphracts_2
+		gold_cost = 400
+		build_time = 2190
+		knights = 15
+		horse_archers = 20
+		knights_offensive = 0.075
+		horse_archers_offensive = 0.075
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_soltarian_cataphracts_4 = {
+		desc = ca_culture_soltarian_cataphracts_1_desc
+		potential = {
+			OR = {
+				culture_group = soltarian
+				has_building = ca_culture_soltarian_cataphracts_1
+				has_building = ca_culture_soltarian_cataphracts_2
+				has_building = ca_culture_soltarian_cataphracts_3
+				has_building = ca_culture_soltarian_cataphracts_4
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4 
+			ROOT = {
+				culture_group = soltarian
+			}
+		}
+		upgrades_from = ca_culture_soltarian_cataphracts_3
+		gold_cost = 500
+		build_time = 2190
+		knights = 20
+		horse_archers = 20
+		knights_offensive = 0.075
+		horse_archers_offensive = 0.075
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_hunter_range_1 = {
+		desc = ca_culture_hunter_range_1_desc
+		potential = {
+			OR = {
+				culture = elisian
+				culture = orates
+				has_building = ca_culture_hunter_range_1
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture = elisian
+					culture = orates
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 150
+		build_time = 730
+		archers = 40
+		archers_offensive = 0.1
+		light_cavalry = 20
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_hunter_range_2 = {
+		desc = ca_culture_hunter_range_1_desc
+		potential = {
+			OR = {
+				culture = elisian
+				culture = orates
+				has_building = ca_culture_hunter_range_1
+				has_building = ca_culture_hunter_range_2
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1 
+			ROOT = {
+				OR = {
+					culture = elisian
+					culture = orates
+				}
+			}
+		}
+		upgrades_from = ca_culture_hunter_range_1
+		gold_cost = 300
+		build_time = 1095
+		archers = 50
+		archers_offensive = 0.1
+		light_cavalry = 25
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_hunter_range_3 = {
+		desc = ca_culture_hunter_range_1_desc
+		potential = {
+			OR = {
+				culture = elisian
+				culture = orates
+				has_building = ca_culture_hunter_range_1
+				has_building = ca_culture_hunter_range_2
+				has_building = ca_culture_hunter_range_3
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2 
+			ROOT = {
+				OR = {
+					culture = elisian
+					culture = orates
+				}
+			}
+		}
+		upgrades_from = ca_culture_hunter_range_2
+		gold_cost = 400
+		build_time = 2190
+		archers = 50
+		archers_offensive = 0.1
+		light_cavalry = 25
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_hunter_range_4 = {
+		desc = ca_culture_hunter_range_1_desc
+		potential = {
+			OR = {
+				culture = elisian
+				culture = orates
+				has_building = ca_culture_hunter_range_1
+				has_building = ca_culture_hunter_range_2
+				has_building = ca_culture_hunter_range_3
+				has_building = ca_culture_hunter_range_4
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4 
+			ROOT = {
+				OR = {
+					culture = elisian
+					culture = orates
+				}
+			}
+		}
+		upgrades_from = ca_culture_hunter_range_3
+		gold_cost = 500
+		build_time = 2190
+		archers = 60
+		archers_offensive = 0.1
+		light_cavalry = 30
+		light_cavalry_offensive = 0.1
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 0.8
@@ -216,13 +666,17 @@ city = {
 		potential = {
 			OR = {
 				culture = imperial
+				culture = orates
 				has_building = ca_culture_civium_district_1
 			}
 		}
 		trigger = { 
 			TECH_CITY_CONSTRUCTION = 0 
 			ROOT = {
-				culture = imperial
+				OR = {
+					culture = imperial
+					culture = orates
+				}
 			}
 		}
 		prerequisites = { ct_wall_1 }
@@ -238,6 +692,7 @@ city = {
 		potential = {
 			OR = {
 				culture = imperial
+				culture = orates
 				has_building = ca_culture_civium_district_1 
 				has_building = ca_culture_civium_district_2
 			}
@@ -245,7 +700,10 @@ city = {
 		trigger = { 
 			TECH_CITY_CONSTRUCTION = 1 
 			ROOT = {
-				culture = imperial
+				OR = {
+					culture = imperial
+					culture = orates
+				}
 			}
 		}
 		upgrades_from = ca_culture_civium_district_1 
@@ -260,7 +718,8 @@ city = {
 		desc = ca_culture_civium_district_1_desc
 		potential = {
 			OR = {
-				culture_group = high_denrian
+				culture = imperial
+				culture = orates
 				has_building = ca_culture_civium_district_1 
 				has_building = ca_culture_civium_district_2
 				has_building = ca_culture_civium_district_3
@@ -269,7 +728,10 @@ city = {
 		trigger = { 
 			TECH_CITY_CONSTRUCTION = 2 
 			ROOT = {
-				culture = imperial
+				OR = {
+					culture = imperial
+					culture = orates
+				}
 			}
 		}
 		upgrades_from = ca_culture_civium_district_2
@@ -285,6 +747,7 @@ city = {
 		potential = {
 			OR = {
 				culture = imperial
+				culture = orates
 				has_building = ca_culture_civium_district_1 
 				has_building = ca_culture_civium_district_2 
 				has_building = ca_culture_civium_district_3 
@@ -294,7 +757,10 @@ city = {
 		trigger = { 
 			TECH_CITY_CONSTRUCTION = 4 
 			ROOT = {
-				culture = imperial
+				OR = {
+					culture = imperial
+					culture = orates
+				}
 			}
 		}
 		upgrades_from = ca_culture_civium_district_3
@@ -408,6 +874,120 @@ city = {
 		retinuesize = 50
 		pikemen = 50
 		pikemen_defensive = 0.2
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_slave_district_1 = {
+		desc = ca_culture_slave_district_1_desc
+		potential = {
+			OR = {
+				culture = septimian
+				culture = elisian
+				has_building = ca_culture_slave_district_1
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture = septimian
+					culture = elisian
+				}
+			}
+		}
+		prerequisites = { ct_wall_1 }
+		gold_cost = 150
+		build_time = 730
+		tax_income = 4.5
+		local_revolt_risk = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_slave_district_2 = {
+		desc = ca_culture_slave_district_1_desc
+		potential = {
+			OR = {
+				culture = septimian
+				culture = elisian
+				has_building = ca_culture_slave_district_1 
+				has_building = ca_culture_slave_district_2
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 1 
+			ROOT = {
+				OR = {
+					culture = septimian
+					culture = elisian
+				}
+			}
+		}
+		upgrades_from = ca_culture_slave_district_1 
+		gold_cost = 300
+		build_time = 1095
+		tax_income = 5.5
+		local_revolt_risk = 0.05
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_slave_district_3 = {
+		desc = ca_culture_slave_district_1_desc
+		potential = {
+			OR = {
+				culture = septimian
+				culture = elisian
+				has_building = ca_culture_slave_district_1 
+				has_building = ca_culture_slave_district_2
+				has_building = ca_culture_slave_district_3
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 2 
+			ROOT = {
+				OR = {
+					culture = septimian
+					culture = elisian
+				}
+			}
+		}
+		upgrades_from = ca_culture_slave_district_2
+		gold_cost = 400
+		build_time = 2190
+		tax_income = 6.5
+		local_revolt_risk = 0.05
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_slave_district_4 = {
+		desc = ca_culture_slave_district_1_desc
+		potential = {
+			OR = {
+				culture = septimian
+				culture = elisian
+				has_building = ca_culture_slave_district_1 
+				has_building = ca_culture_slave_district_2 
+				has_building = ca_culture_slave_district_3 
+				has_building = ca_culture_slave_district_4
+			}
+		}
+		trigger = { 
+			TECH_CITY_CONSTRUCTION = 4 
+			ROOT = {
+				OR = {
+					culture = septimian
+					culture = elisian
+				}
+			}
+		}
+		upgrades_from = ca_culture_slave_district_3
+		gold_cost = 500
+		build_time = 2190
+		tax_income = 7.5
+		local_revolt_risk = 0.05
 		ai_creation_factor = 98
 		
 		extra_tech_building_start = 0.8

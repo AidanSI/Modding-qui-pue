@@ -1,26 +1,57 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ca_culture_high_denrian_upper_1;Upper City;;;;;;;;;;;;;x
-ca_culture_high_denrian_upper_2;Upper City;;;;;;;;;;;;;x
-ca_culture_high_denrian_upper_3;Upper City;;;;;;;;;;;;;x
+
+ca_culture_high_denrian_upper_1;Aristocratic Villae;;;;;;;;;;;;;x
+ca_culture_high_denrian_upper_2;Villae Hamlet;;;;;;;;;;;;;x
+ca_culture_high_denrian_upper_3;Upper Village;;;;;;;;;;;;;x
 ca_culture_high_denrian_upper_4;Upper City;;;;;;;;;;;;;x
 ca_culture_high_denrian_upper_1_desc;Denrian castles are more akin to luxurious palaces than fortified citadels. In that regard, palaces are traditionally the center of each city. Over time, each palace surrounded itself with an Upper City reserved for the wealthiest.;;;;;;;;;;;;;x
 
-ca_culture_high_denrian_legionary_1;Legionary Outpost;;;;;;;;;;;;;x
-ca_culture_high_denrian_legionary_2;Legionary Outpost;;;;;;;;;;;;;x
+ca_culture_slave_camp_1;Slave Fighting Pits;;;;;;;;;;;;;x
+ca_culture_slave_camp_2;Slave Arena;;;;;;;;;;;;;x
+ca_culture_slave_camp_3;Slave Barracks;;;;;;;;;;;;;x
+ca_culture_slave_camp_4;Slave Training Grounds;;;;;;;;;;;;;x
+ca_culture_slave_camp_1_desc;When slaves became too numerous, it was common practice to have them fight one another to thin out the population. The surviving members were either sent to the fields or conscripted into the army, in which they had a chance to earn their freedom by spilling blood.;;;;;;;;;;;;;x
+
+ca_culture_solar_temple_1;Solar Shrine;;;;;;;;;;;;;x
+ca_culture_solar_temple_2;Solar Temple;;;;;;;;;;;;;x
+ca_culture_solar_temple_3;Solar Basilica;;;;;;;;;;;;;x
+ca_culture_solar_temple_4;Solar Cathedral;;;;;;;;;;;;;x
+ca_culture_solar_temple_1_desc;The Soltarian Dynasties are said to draw their power from the Sun itself. Over time, the veneration of the Sun became a cultural festival which transcended religion. The inhabitants of a castle often gather at thes shrines to celebrate the warmth of the sun.;;;;;;;;;;;;;x
+
+ca_culture_soltarian_cataphracts_1;Horse Breeder;;;;;;;;;;;;;x
+ca_culture_soltarian_cataphracts_2;Cavalry Stables;;;;;;;;;;;;;x
+ca_culture_soltarian_cataphracts_3;Cataphracts Stables;;;;;;;;;;;;;x
+ca_culture_soltarian_cataphracts_4;Cataphracts Training Grounds;;;;;;;;;;;;;x
+ca_culture_soltarian_cataphracts_1_desc;The island of Soltaria was home to a durable breed of horses. Both the rider and its mount were draped from head to toe in scale and plate armor. This fiersome cavalry dominated the north of Denria and striked fear into the hearts of Elven warriors.;;;;;;;;;;;;;x
+
+ca_culture_high_denrian_legionary_1;Small Legionary Outpost;;;;;;;;;;;;;x
+ca_culture_high_denrian_legionary_2;Large Legionary Outpost;;;;;;;;;;;;;x
 ca_culture_high_denrian_legionary_3;Legionary Garrison;;;;;;;;;;;;;x
-ca_culture_high_denrian_legionary_4;Legionary Garrison;;;;;;;;;;;;;x
+ca_culture_high_denrian_legionary_4;Imperial Legionary Garrison;;;;;;;;;;;;;x
 ca_culture_high_denrian_legionary_1_desc;The rise of the Denrian Empire was made possible thanks to a standing army of professional soldiers: the Legionaries. In times of war, border cities are reinforced by a garrison of these elite warriors.;;;;;;;;;;;;;x
 
-ca_culture_civium_district_1;Civium District;;;;;;;;;;;;;x
-ca_culture_civium_district_2;Civium District;;;;;;;;;;;;;x
+ca_culture_hunter_range_1;Hunter Camp;;;;;;;;;;;;;x
+ca_culture_hunter_range_2;Hunter Range;;;;;;;;;;;;;x
+ca_culture_hunter_range_3;Hunter Training Grounds;;;;;;;;;;;;;x
+ca_culture_hunter_range_4;Hunter Chapter;;;;;;;;;;;;;x
+ca_culture_hunter_range_1_desc;The first wars against Ceresia were a military disaster for the Denrian humans. Groups of humans trained to match their skill with the bow, and decades after the first war, the Order of the Hunt was born.;;;;;;;;;;;;;x
+
+ca_culture_slave_district_1;Slave Pens;;;;;;;;;;;;;x
+ca_culture_slave_district_2;Slave Ghettos;;;;;;;;;;;;;x
+ca_culture_slave_district_3;Slave District;;;;;;;;;;;;;x
+ca_culture_slave_district_4;Large Slave District;;;;;;;;;;;;;x
+ca_culture_slave_district_1_desc;The multiple wars against Ceresia brought in a large influx of slaves, which the Denrian humans did not hesitate to use in order to bolster the economy. The poor living conditions of these slaves often led to uprisings.;;;;;;;;;;;;;x
+
+ca_culture_civium_district_1;Small Civium Village;;;;;;;;;;;;;x
+ca_culture_civium_district_2;Large Civium Village;;;;;;;;;;;;;x
 ca_culture_civium_district_3;Civium District;;;;;;;;;;;;;x
-ca_culture_civium_district_4;Civium District;;;;;;;;;;;;;x
+ca_culture_civium_district_4;Imperial Civium District;;;;;;;;;;;;;x
 ca_culture_civium_district_1_desc;Most citizens of the Empire live in these Civium Districts. Over time, the Civium Districts have replaced the Upper Cities as the economic center of each and every town.;;;;;;;;;;;;;x
 
-ca_culture_legionary_barracks_1;Legionary Barracks;;;;;;;;;;;;;x
-ca_culture_legionary_barracks_2;Legionary Barracks;;;;;;;;;;;;;x
-ca_culture_legionary_barracks_3;Legionary Barracks;;;;;;;;;;;;;x
-ca_culture_legionary_barracks_4;Legionary Barracks;;;;;;;;;;;;;x
+ca_culture_legionary_barracks_1;Legionary Training Camp;;;;;;;;;;;;;x
+ca_culture_legionary_barracks_2;Small Legionary Barracks;;;;;;;;;;;;;x
+ca_culture_legionary_barracks_3;Large Legionary Barracks;;;;;;;;;;;;;x
+ca_culture_legionary_barracks_4;Imperial Legionary Barracks;;;;;;;;;;;;;x
 ca_culture_legionary_barracks_1_desc;To preserve its stability and military power, the various Denrian emperors relied on a standing army recruited amongst the citizens of the Empire. In times of siege, Legionaries can help defend the city as well.;;;;;;;;;;;;;x
 
 RETTYPE_CUL_HIGH_DENRIAN;Swordsmen Legionaries;;;;;;;;;;;;;x
@@ -33,5 +64,5 @@ RETTYPE_CUL_AUX_LEGIO;Auxiliary Legionaries;;;;;;;;;;;;;x
 RETTYPE_CUL_ELISIAN;Elf Hunters;;;;;;;;;;;;;x
 RETTYPE_CUL_DENRIAN_ELEPHANTS;War Elephants;;;;;;;;;;;;;x
 RETTYPE_CUL_KNIGHTS_BLOOD;Knights of the Blood Oath;;;;;;;;;;;;;x
-RETTYPE_CUL_SNAKE_DEVOURED;Devoured Ones;;;;;;;;;;;;;x
+RETTYPE_CUL_SNAKE_DEVOURED;The Devoured;;;;;;;;;;;;;x
 
