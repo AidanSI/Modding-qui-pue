@@ -17,6 +17,11 @@ eucathysus_cultist_desc;A devout follower of Eucathysus, Denrian god of mysterie
 ercaleus_cultist;Follower of Ercaleus;;;;;;;;;;;;;x 
 ercaleus_cultist_desc;A devout follower of Ercaleus, Denrian god of war, order and fire.;;;;;;;;;;;;;x 
 
+martial_sun;Way of Knighthood;;;;;;;;;;;;;x 
+martial_sun_desc;A follower of the chivalric principles of Denria, this fervent believer of the Sun has dedicated their life to justice and war.
+explorer_sun;Way of Discovery;;;;;;;;;;;;;x 
+explorer_sun_desc;This fervent believer of the Sun has dedicated their life to the pursuit of wealth, knowledge and peace.;;;;;;;;;;;;;x 
+
 race_human;Human;;;;;;;;;;;;;x 
 race_human_desc;Humanity is the most prolific race in the known world.;;;;;;;;;;;;;x 
 race_elf;Elf;;;;;;;;;;;;;x 

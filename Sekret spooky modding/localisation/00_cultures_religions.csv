@@ -22,6 +22,20 @@ abrain;Abrain;;;;;;;;;;;;;x
 exiles;Exiles;;;;;;;;;;;;;x
 
 amalian;Amalian;;;;;;;;;;;;;x
+melikatene;Melikatene;;;;;;;;;;;;;x
+lindoi;Lindoi;;;;;;;;;;;;;x
+chruaturian;Chruaturian;;;;;;;;;;;;;x
+kaspator;Kaspator;;;;;;;;;;;;;x
+
+ogre;Ogre;;;;;;;;;;;;;x
+aretri;Aretri;;;;;;;;;;;;;x
+gyorat;Gyorat;;;;;;;;;;;;;x
+szendre;Szendre;;;;;;;;;;;;;x
+sjarvi;Sjarvi;;;;;;;;;;;;;x
+
+elf_culture_modifier;Elven Troops Modifier;;;;;;;;;;;;;x
+ogre_culture_modifier;Ogre Troops Modifier;;;;;;;;;;;;;x
+dwarf_culture_modifier;Dwarven Troops Modifier;;;;;;;;;;;;;x
 
 dawn_opinion;Dawn Opinion;;;;;;;;;;;;;x
 blood_cult_opinion;Blood Cult Opinion;;;;;;;;;;;;;x
@@ -40,9 +54,9 @@ dawn_DESC;The Denrian Pantheon known as the Dawn is by far the most widespread r
 blood_cult;Blood Cult;;;;;;;;;;;;;x
 blood_cult_DESC;A fanatical sect which empowers its followers through forbidden blood rituals. Although these cultists still worship the Holy Trinity of the Dawn, it is rumoured that they have found a much more powerful and mysterious entity to send their pleas to.;;;;;;;;;;;;;x
 snake_cult;Snake Cult;;;;;;;;;;;;;x
-snake_cult_DESC;The Snake Cult emerged from the schismatic behaviour of the worshippers of The Great Snake, a deity which preceded Eucathysus of the Dawn. Blood rituals and human sacrifices are a common way to pay respect to the Snake God. Those who are sacrificed their insatiable god suffer a fate worst than death.;;;;;;;;;;;;;x
+snake_cult_DESC;The Snake Cult emerged from the schismatic behaviour of the worshippers of Dembellae, the Great Snake, a deity which preceded Eucathysus of the Dawn. Blood rituals and human sacrifices are a common way to pay respect to the Snake God. Those who are sacrificed their insatiable god suffer a fate worst than death.;;;;;;;;;;;;;x
 sun_church;Sun Church;;;;;;;;;;;;;x
-sun_church_DESC;TBA;;;;;;;;;;;;;x
+sun_church_DESC;The Sun-God is worshipped by the Soltarian Dynasties, to the North-West of Denria. The Sun embodies power, justice, and the light that drives away the night. The Church of the Sun is one of the very few religions tolerated by the cult of the Dawn.;;;;;;;;;;;;;x
 moon_church;Moon Church;;;;;;;;;;;;;x
 moon_church_DESC;A sect which thrives in darkness, the so-called Church of the Moon rejected the Sun and the Dawn in favour of the cold embrace of the shadows. Worshippers of the Moon have been known to practice necromancy, a type of magic outlawed by both Humans and Elves in Denria.;;;;;;;;;;;;;x
 
@@ -62,7 +76,7 @@ GOD_DAWN;The Dawn;;;;;;;;;;;;;x
 GOD_ALTHEA;Althea;;;;;;;;;;;;;x
 GOD_ERCALEUS;Ercaleus;;;;;;;;;;;;;x
 GOD_EUCATHYSUS;Eucathysus;;;;;;;;;;;;;x
-GOD_DAHAKA;The Dahaka;;;;;;;;;;;;;x
+GOD_DEMBELLAE;Dembellae;;;;;;;;;;;;;x
 GOD_SUN;The Sun;;;;;;;;;;;;;x
 GOD_MOON;The Moon;;;;;;;;;;;;;x
 GOD_NANETH;Naneth;;;;;;;;;;;;;x
@@ -89,6 +103,11 @@ worship_ercaleus_desc;Dedicate your life to Ercaleus, god of war, order and fire
 renounce_deity;Renouce Deity;;;;;;;;;;;;;x
 renounce_deity_desc;My current dedication to one of the three divine entities of the Dawn does not suit my lifestyle. Perhaps is it time to seek the favor of another deity?;;;;;;;;;;;;;x
 
+embrace_martial_sun;Embrace the Way of Knighthood;;;;;;;;;;;;;x 
+embrace_martial_sun_desc;Dedicate your life to the virtues of Chivalry.;;;;;;;;;;;;;x 
+embrace_explorer_sun;Embrace the Way of Discovery;;;;;;;;;;;;;x 
+embrace_explorer_sun_desc;Dedicate your life to the pursuit of wealth and knowledge.;;;;;;;;;;;;;x 
+
 create_pontifex_dawn;Instaure a Great Pontificate;;;;;;;;;;;;;x
 create_pontifex_dawn_desc;Our religion is decentralized and prone to heresy. By centralizing all power in the hands of a Pontifex Maximus, it will be easier to control and regulate the Faith.;;;;;;;;;;;;;x
 
@@ -110,3 +129,5 @@ secret_religious_society_solertian_pagan;The Servants of Bhaga;;;;;;;;;;;;;x
 sympathy_pagans;Sympathy for Pagan Religions;;;;;;;;;;;;;x
 sympathy_old_denrian;Sympathy for Old Denrian Religions;;;;;;;;;;;;;x
 sympathy_denrian;Sympathy for Denrian Religions;;;;;;;;;;;;;x
+
+

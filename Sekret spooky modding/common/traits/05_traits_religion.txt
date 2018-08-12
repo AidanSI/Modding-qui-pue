@@ -1,6 +1,11 @@
 martial_sun = {
+	potential = {
+		religion = sun_church
+	}
+
 	monthly_character_piety = 1
-	martial = 5
+	martial = 3
+	diplomacy = -1
 	
 	religious = yes # Lost immediately on religion change
 	
@@ -8,16 +13,22 @@ martial_sun = {
 		explorer_sun
 	}
 	
-	opposite_opinion = -30
+	opposite_opinion = -25
+
+	ruler_designer_cost = 0
 	
-	customizer = no
 	random = no
 }
 
 explorer_sun = {
+	potential = {
+		religion = sun_church
+	}
+
 	monthly_character_prestige = 1
 	stewardship = 2
-	diplomacy = 3
+	diplomacy = 2
+	martial = -1
 	
 	religious = yes # Lost immediately on religion change
 	
@@ -25,8 +36,85 @@ explorer_sun = {
 		martial_sun
 	}
 	
-	opposite_opinion = -30
+	opposite_opinion = -25
+
+	ruler_designer_cost = 0
 	
-	customizer = no
 	random = no
+}
+
+
+althea_cultist = {
+	potential = {
+		OR = {
+			religion = dawn
+			religion = blood_cult
+		}
+	}
+
+	diplomacy = 2
+	fertility = 0.15
+	intrigue = -1
+
+	ai_zeal = 20
+
+	same_opinion = 15
+	opposite_opinion = -5
+
+	ruler_designer_cost = 0
+
+	opposites = {
+		ercaleus_cultist
+		eucathysus_cultist
+	}
+}
+
+ercaleus_cultist = {
+	potential = {
+		OR = {
+			religion = dawn
+			religion = blood_cult
+		}
+	}
+
+	martial = 2
+	combat_rating = 1
+	stewardship = -1
+
+	ai_zeal = 20
+
+	same_opinion = 15
+	opposite_opinion = -5
+
+	ruler_designer_cost = 0
+
+	opposites = {
+		althea_cultist
+		eucathysus_cultist
+	}
+}
+
+eucathysus_cultist = {
+	potential = {
+		OR = {
+			religion = dawn
+			religion = blood_cult
+		}
+	}
+
+	intrigue = 2
+	learning = 1
+	martial = -1
+
+	ai_zeal = 20
+
+	same_opinion = 15
+	opposite_opinion = -5
+
+	ruler_designer_cost = 0
+
+	opposites = {
+		ercaleus_cultist
+		althea_cultist
+	}
 }

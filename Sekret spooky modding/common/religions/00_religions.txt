@@ -152,7 +152,7 @@ denrian = {
 		}
 		
 		evil_god_names = {
-			GOD_DAHAKA
+			GOD_DEMBELLAE
 		}
 
 		uses_jizya_tax = yes
@@ -204,7 +204,7 @@ denrian = {
 		}
 		
 		evil_god_names = {
-			GOD_DAHAKA
+			GOD_DEMBELLAE
 		}
 
 		can_call_crusade = yes
@@ -241,10 +241,10 @@ denrian = {
 
 		piety_name = ZEAL
 
-		high_god_name = GOD_DAHAKA
+		high_god_name = GOD_DEMBELLAE
 		
 		god_names = {
-			GOD_DAHAKA
+			GOD_DEMBELLAE
 		}
 		
 		evil_god_names = {

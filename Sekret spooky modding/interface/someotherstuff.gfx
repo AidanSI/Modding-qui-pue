@@ -18,6 +18,14 @@ spriteTypes = {
 		texturefile = "gfx\\interface\decision_icon_convert_to_local_religion.dds" #Placeholder
 	}
 	spriteType = {
+		name = "GFX_embrace_martial_sun"
+		texturefile = "gfx\\interface\decision_icon_convert_to_local_religion.dds" #Placeholder
+	}
+	spriteType = {
+		name = "GFX_embrace_explorer_sun"
+		texturefile = "gfx\\interface\decision_icon_convert_to_local_religion.dds" #Placeholder
+	}
+	spriteType = {
 		name = "GFX_create_pontifex_dawn"
 		texturefile = "gfx\\interface\decision_icon_convert_to_local_religion.dds" #Placeholder
 	}

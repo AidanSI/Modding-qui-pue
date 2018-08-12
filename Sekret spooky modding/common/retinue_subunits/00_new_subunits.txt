@@ -147,32 +147,6 @@ RETTYPE_CUL_KNIGHTS_BLOOD =
 	}
 }
 
-RETTYPE_CUL_KNIGHTS_BLOOD = 
-{
-	first_type = 4
-	first_amount = 175
-	second_type = 3
-	second_amount = 75
-	
-	potential = {
-		is_nomadic = no
-		OR = {
-			AND = {
-				culture = septimian
-				is_title_active = d_ascendant_blood
-				religion = dawn
-			}
-			religion = blood_cult
-		}
-	}
-	
-	modifier = {
-		light_cavalry_defensive = 0.2
-		knights_offensive = 0.4
-		knights_defensive = 0.1
-	}
-}
-
 RETTYPE_CUL_SOLTARIAN = 
 {
 	first_type = 4

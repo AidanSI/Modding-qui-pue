@@ -40,7 +40,7 @@ race_human = {
 		salvarola
 	}
 
-	opposite_opinion = -15
+	opposite_opinion = -10
 }
 
 race_elf = {
@@ -76,6 +76,10 @@ race_elf = {
 
 race_ogre = {
 	ruler_designer_cost = 0
+
+	potential = {
+		culture_group = ogre
+	}
 
 	inherit_chance = 100
 
@@ -122,5 +126,5 @@ race_dwarf = {
 	}
 
 	same_opinion = 5
-	opposite_opinion = -5
+	opposite_opinion = -15
 }

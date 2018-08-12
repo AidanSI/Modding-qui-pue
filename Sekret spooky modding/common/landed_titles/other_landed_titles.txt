@@ -103,7 +103,9 @@ k_saint_solaire = {
 	creation_requires_capital = no
 	
 	allow = {
-		always = no
+		trait = martial_sun
+		piety = 1500
+		martial = 25
 	}
 	
 	short_name = yes
